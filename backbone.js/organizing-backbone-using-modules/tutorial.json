@@ -1,0 +1,14 @@
+{
+  "author": "Thomas Davis <thomasalwyndavis@gmail.com>",
+  "description": "Organizing your application using Modules (require.js)",
+  "homepage": "https://github.com/thomasdavis",
+  "keywords": [
+    "backbone.js",
+    "require.js",
+    "modules",
+    "tutorial"
+  ],
+  "library-tags": ["backbone.js", "require.js"],
+  "name": "Organizing your application using Modules (require.js)",
+  "repository": "https://github.com/thomasdavis/backbonetutorials"
+}
