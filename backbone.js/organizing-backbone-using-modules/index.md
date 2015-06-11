@@ -377,3 +377,9 @@ Get in touch with me on twitter, comments or GitHub!
 ### Contributors
 
 * [Jakub Kozisek](https://github.com/dzejkej) (created modular-backbone-updated containing updated libs with AMD support)
+
+### Backbone.js Beginner Video Tutorial
+
+I have put extra effort into making a very easy to understand Backbone.js video which is also free. It is 70mins long and covers everything you need to know when getting started.
+
+[WATCH VIDEO](https://www.youtube.com/watch?v=FZSjvWtUxYk)
