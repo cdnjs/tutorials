@@ -15,8 +15,8 @@
     "tutorial"
   ],
   "library-tags": ["backbone.js", "require.js"],
-  "name": "Simple example - Node.js, Restify, MongoDb and Mongoose ",
+  "name": "What is a view?",
   "repository": "https://github.com/thomasdavis/backbonetutorials",
   "disqus_shortname": "bbtutes",
-  "disqus_url": "http://backbonetutorials.com/nodejs-restify-mongodb-mongoose"
+  "disqus_url": "http://backbonetutorials.com/what-is-a-view"
 }
