@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Thomas Davis",
+    "email": "thomasalwyndavis@gmail.com",
+    "description": "I work with a few open source projects and also work in the drone industry",
+    "homepage": "http://thomasdav.is/",
+    "twitter": "https://twitter.com/neutralthoughts"
+  },
+  "description": "Organizing your application using Modules (require.js)",
+  "homepage": "https://github.com/thomasdavis",
+  "keywords": [
+    "backbone.js",
+    "require.js",
+    "modules",
+    "tutorial"
+  ],
+  "library-tags": ["backbone.js", "require.js"],
+  "name": "Cross-domain Backbone.js with sessions using CORS",
+  "repository": "https://github.com/thomasdavis/backbonetutorials",
+  "disqus_shortname": "bbtutes",
+  "disqus_url": "http://backbonetutorials.com/cross-domain-sessions"
+}
