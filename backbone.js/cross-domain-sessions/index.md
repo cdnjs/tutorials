@@ -35,7 +35,7 @@ Host the codebase on a simple HTTP server such that the domain is `localhost` wi
 
 [Example Codebase](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/cross-domain)
 
-[Example Demo](http://backbonetutorials.com/examples/cross-domain/)
+[Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/cross-domain/)
 
 
 This tutorial focuses on building a flexible Session model to control session state in your application.
@@ -340,7 +340,7 @@ Enjoy using Backbone.js cross domain!
 
 [Example Codebase](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/cross-domain)
 
-[Example Demo](http://backbonetutorials.com/examples/cross-domain/)
+[Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/cross-domain/)
 
 ### Relevant Links
 

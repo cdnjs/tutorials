@@ -6,7 +6,7 @@ __This tutorial is deprecated as the Twitter API is now oauth access only, thoug
 
 In this example we are going to build a widget that pulls in tweets and when the user scrolls to the bottom of the widget Backbone.js will re-sync with the server to bring down the next page of results.
 
-[Example Demo](http://backbonetutorials.com/examples/infinite-scroll/)
+[Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/infinite-scroll/)
 
 [Example Source](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/infinite-scroll)
 
@@ -129,6 +129,6 @@ Our view above passes into our underscore template the variable tweets which we 
 
 This is a very lightweight but robust infinite scroll example. There are caveats to using infinite scroll in UI/UX so make sure to only use it when applicable.
 
-[Example Demo](http://backbonetutorials.com/examples/infinite-scroll/)
+[Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/infinite-scroll/)
 
 [Example Source](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/infinite-scroll)

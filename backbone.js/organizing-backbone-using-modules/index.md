@@ -36,7 +36,7 @@ To easily understand this tutorial you should jump straight into the example cod
 
 [Example Codebase](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/modular-backbone)
 
-[Example Demo](http://backbonetutorials.com/examples/modular-backbone)
+[Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/modular-backbone)
 
 
 The tutorial is only loosely coupled with the example and you will find the example to be more comprehensive.
