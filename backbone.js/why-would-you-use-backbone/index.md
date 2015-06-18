@@ -19,7 +19,7 @@ Backbone is an incredibly small library for the amount of functionality and stru
 If you are looking for comparisons to build your single page application, try some of these resourceful links.
 
 * [A feature comparison of different frontend frameworks](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
-* [Todo MVC - Todo list implemented in the many different types of frontend frameworks](http://addyosmani.github.com/todomvc/)
+* [Todo MVC - Todo list implemented in the many different types of frontend frameworks](http://todomvc.com/)
 
 
 ### Contributors
