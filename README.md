@@ -17,6 +17,12 @@ We want to make a super beautiful and useful tutorial system where anyone can ge
 
 Tutorials show under each associated library. At the moment we don't have to support for generic Javascript tutorials but please leave an issue if you want to write one.
 
-![related tutorials](http://i.imgur.com/uGousf8.png)a
+![related tutorials](http://i.imgur.com/uGousf8.png)
+
+## Why host your tutorial here?
+
+* Cdnjs.com is visited by hundreds of thousands of developers each month, garanteeing that your tutorial will be viewed..
+* You don't have to worry about setting up an elegant website to display your tutorials.
+* Authors get full credit and can remove their work at anytime.
 * Everything is hosted on Github so the community can easily fix bugs and grammatic mistakes in your tutorials.
 * Cdnjs is a completely volunteer effort where we pay for bills out of own pockets. Writing tutorials increases our advertising revenue which means we can better improve the project.
