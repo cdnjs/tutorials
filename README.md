@@ -21,7 +21,7 @@ Tutorials show under each associated library. At the moment we don't have to sup
 
 ## Why host your tutorial here?
 
-* Cdnjs.com is visited by hundreds of thousands of developers each month, garanteeing that your tutorial will be viewed..
+* Cdnjs.com is visited by hundreds of thousands of developers each month, guaranteeing that your tutorial will be viewed..
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at anytime.
 * Everything is hosted on Github so the community can easily fix bugs and grammatic mistakes in your tutorials.
