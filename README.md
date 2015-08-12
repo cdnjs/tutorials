@@ -15,7 +15,7 @@ We want to make a super beautiful and useful tutorial system where anyone can ge
 
 ## Tutorial Listings
 
-Tutorials show under each associated library. At the moment we don't have to support for generic Javascript tutorials but please leave an issue if you want to write one.
+Tutorials show under each associated library. At the moment we don't have support for generic Javascript tutorials but please leave an issue if you want to write one.
 
 ![related tutorials](http://i.imgur.com/mDOePCw.png)
 
