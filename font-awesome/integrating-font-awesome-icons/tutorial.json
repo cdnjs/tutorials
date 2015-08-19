@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Lite McFish",
+    "email": "lite260@gmail.com",
+    "description": "Developer at GameFruit. I love open source projects! ",
+    "homepage": "https://gfruit.info/",
+    "twitter": "https://twitter.com/lightningboy24"
+  },
+  "description": "How to integrate font-awesome icons in your site.",
+  "homepage": "https://github.com/thomasdavis",
+  "keywords": [
+    "font-awesome",
+    "twitter-bootstrap",
+    "css",
+    "icons"
+  ],
+  "library-tags": ["twitter-bootstrap", "font-awesome"],
+  "name": "How to integrate font-awesome icons in your site.",
+  "repository": " ",
+  "disqus_shortname": " ",
+  "disqus_url": " "
+}
