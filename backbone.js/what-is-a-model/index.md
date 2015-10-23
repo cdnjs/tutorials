@@ -260,7 +260,7 @@ var attributes = human.toJSON(); // { name: "Thomas", age: 67}
 // This simply returns a copy of the current attributes.
 
 var attributes = human.attributes;
-// The line above gives a direct reference to the attributes and you should be careful when playing with it.   Best practise would suggest that you use .set() to edit attributes of a model to take advantage of backbone listeners. */
+// The line above gives a direct reference to the attributes and you should be careful when playing with it.   Best practise would suggest that you use .set() to edit attributes of a model to take advantage of backbone listeners.
 ```
 
 _Validate data before you set or save it_
