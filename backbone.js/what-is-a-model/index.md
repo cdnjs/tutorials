@@ -181,7 +181,7 @@ var userDetails = {
 // The server should save the data and return a response containing the new `id`
 user.save(userDetails, {
     success: function (user) {
-        alert(user.toJSON());
+        alert(JSON.stringify(user));
     }
 })
 
@@ -206,7 +206,7 @@ var user = new Usermodel({id: 1});
 // The server should return the id, name and email from the database
 user.fetch({
     success: function (user) {
-        alert(user.toJSON());
+        alert(JSON.stringify(user));
     }
 })
 
@@ -232,7 +232,7 @@ var user = new Usermodel({
 
 user.save({name: 'Davis'}, {
   success: function (model) {
-    alert(user.toJSON());
+    alert(JSON.stringify(user));
   }
 });
 
