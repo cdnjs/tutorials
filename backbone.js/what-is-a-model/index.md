@@ -223,7 +223,7 @@ var user = new UserModel({
 // PUT /user/1 with a payload of {name: 'Davis', email: 'thomasalwyndavis@gmail.com'}
 
 user.save({name: 'Davis'}, {
-  success: function (model) {
+  success: function (user) {
     alert(JSON.stringify(user));
   }
 });
