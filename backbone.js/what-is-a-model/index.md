@@ -5,7 +5,6 @@ Across the internet the definition of [MVC](http://en.wikipedia.org/wiki/Model%E
 > Models are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it: conversions, validations, computed properties, and access control.
 
 So for the purpose of the tutorial let's create a `model`.
-    
 
 ```js
 var Human = Backbone.Model.extend({
@@ -16,7 +15,6 @@ var Human = Backbone.Model.extend({
 
 var human = new Human();
 ```
-
 
 So _initialize()_ is triggered whenever you create a new instance of a model( models, collections and views work the same way ).   You don't have to include it in your model declaration but you will find yourself using it more often than not.
 
@@ -37,10 +35,9 @@ var human = new Human({ name: "Thomas", age: 67});
 var human = new Human();
 
 human.set({ name: "Thomas", age: 67});
-
 ```
 
-So passing a JavaScript object to our constructor is the same as calling _model.set()_.   Now that these models have attributes set we need to be able to retrieve them.  
+So passing a JavaScript object to our constructor is the same as calling _model.set()_.   Now that these models have attributes set we need to be able to retrieve them.
 
 ## Getting attributes
 
@@ -58,7 +55,6 @@ var human = new Human({ name: "Thomas", age: 67, child: 'Ryan'});
 var age = human.get("age"); // 67
 var name = human.get("name"); // "Thomas"
 var child = human.get("child"); // 'Ryan'
-
 ```
 
 ## Setting model defaults
@@ -108,7 +104,7 @@ human.adopt('John Resig');
 var child = human.get("child"); // 'John Resig'
 ```
 
-So we can implement methods to get/set and perform other calculations using attributes from our model at any time.   
+So we can implement methods to get/set and perform other calculations using attributes from our model at any time.
 
 ## Listening for changes to the model
 
@@ -160,7 +156,7 @@ var UserModel = Backbone.Model.extend({
 
 ### Creating a new model
 
-If we wish to create a new user on the server then we will instantiate a new UserModel and call `save`.  If the `id` attribute of the model is `null`, Backbone.js will send a POST request to the urlRoot of the server. 
+If we wish to create a new user on the server then we will instantiate a new UserModel and call `save`.  If the `id` attribute of the model is `null`, Backbone.js will send a POST request to the urlRoot of the server.
 
 ```js
 var UserModel = Backbone.Model.extend({
@@ -171,20 +167,19 @@ var UserModel = Backbone.Model.extend({
     }
 });
 var user = new UserModel();
-// Notice that we haven't set an `id`
+// Notice that we haven't set an id
 var userDetails = {
     name: 'Thomas',
     email: 'thomasalwyndavis@gmail.com'
 };
-// Because we have not set a `id` the server will call
+// Because we have not set an id the server will call
 // POST /user with a payload of {name:'Thomas', email: 'thomasalwyndavis@gmail.com'}
-// The server should save the data and return a response containing the new `id`
+// The server should save the data and return a response containing the new id
 user.save(userDetails, {
     success: function (user) {
         alert(JSON.stringify(user));
     }
 })
-
 ```
 
 Our table should now have the values
@@ -198,9 +193,8 @@ Now that we have saved a new user model, we can retrieve it from the server.   W
 If we instantiate a model with an `id`, Backbone.js will automatically perform a get request to the urlRoot + '/id' (conforming to RESTful conventions)
 
 ```js
-
-// Here we have set the `id` of the model
-var user = new Usermodel({id: 1});
+// Here we have set the id of the model
+var user = new UserModel({id: 1});
 
 // The fetch below will perform GET /user/1
 // The server should return the id, name and email from the database
@@ -209,7 +203,6 @@ user.fetch({
         alert(JSON.stringify(user));
     }
 })
-
 ```
 
 ### Updating a model
@@ -218,9 +211,8 @@ Now that we have a model that exists on the server we can perform an update usin
 We will use the `save` api call which is intelligent and will send a PUT request instead of a POST request if an `id` is present(conforming to RESTful conventions)
 
 ```js
-
 // Here we have set the id of the model
-var user = new Usermodel({
+var user = new UserModel({
   id: 1,
   name: 'Thomas',
   email: 'thomasalwyndavis@gmail.com'
@@ -231,11 +223,10 @@ var user = new Usermodel({
 // PUT /user/1 with a payload of {name: 'Davis', email: 'thomasalwyndavis@gmail.com'}
 
 user.save({name: 'Davis'}, {
-  success: function (model) {
+  success: function (user) {
     alert(JSON.stringify(user));
   }
 });
-
 ```
 
 ### Deleting a model
@@ -244,20 +235,19 @@ When a model has an `id` we know that it exists on the server, so if we wish to 
 
 ```js
 // Here we have set the id of the model
-var user = new Usermodel({
+var user = new UserModel({
   id: 1,
   name: 'Thomas',
   email: 'thomasalwyndavis@gmail.com'
 });
 
 // Because there is id present, Backbone.js will fire
-// DELETE /user/1 
+// DELETE /user/1
 user.destroy({
   success: function () {
     alert('Destroyed');
   }
 });
-
 ```
 
 ### Tips and Tricks
@@ -270,7 +260,7 @@ var attributes = human.toJSON(); // { name: "Thomas", age: 67}
 // This simply returns a copy of the current attributes.
 
 var attributes = human.attributes;
-// The line above gives a direct reference to the attributes and you should be careful when playing with it.   Best practise would suggest that you use .set() to edit attributes of a model to take advantage of backbone listeners. */
+// The line above gives a direct reference to the attributes and you should be careful when playing with it.   Best practise would suggest that you use .set() to edit attributes of a model to take advantage of backbone listeners.
 ```
 
 _Validate data before you set or save it_
@@ -294,13 +284,12 @@ var Human = Backbone.Model.extend({
 });
 
 var human = new Human;
-human.set({ name: "Mary Poppins", age: -1 }); 
+human.set({ name: "Mary Poppins", age: -1 });
 // Will trigger an alert outputting the error
 
 var human = new Human;
 human.set({ name: "Dr Manhatten", age: -1 });
 // God have mercy on our souls
-    
 ```
 
 ### Contributors
