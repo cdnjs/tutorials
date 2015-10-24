@@ -167,14 +167,14 @@ var UserModel = Backbone.Model.extend({
     }
 });
 var user = new UserModel();
-// Notice that we haven't set an `id`
+// Notice that we haven't set an id
 var userDetails = {
     name: 'Thomas',
     email: 'thomasalwyndavis@gmail.com'
 };
-// Because we have not set a `id` the server will call
+// Because we have not set an id the server will call
 // POST /user with a payload of {name:'Thomas', email: 'thomasalwyndavis@gmail.com'}
-// The server should save the data and return a response containing the new `id`
+// The server should save the data and return a response containing the new id
 user.save(userDetails, {
     success: function (user) {
         alert(JSON.stringify(user));
@@ -193,7 +193,7 @@ Now that we have saved a new user model, we can retrieve it from the server.   W
 If we instantiate a model with an `id`, Backbone.js will automatically perform a get request to the urlRoot + '/id' (conforming to RESTful conventions)
 
 ```js
-// Here we have set the `id` of the model
+// Here we have set the id of the model
 var user = new UserModel({id: 1});
 
 // The fetch below will perform GET /user/1
