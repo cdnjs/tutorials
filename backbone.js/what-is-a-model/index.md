@@ -200,7 +200,7 @@ If we instantiate a model with an `id`, Backbone.js will automatically perform a
 ```js
 
 // Here we have set the `id` of the model
-var user = new Usermodel({id: 1});
+var user = new UserModel({id: 1});
 
 // The fetch below will perform GET /user/1
 // The server should return the id, name and email from the database
