@@ -220,7 +220,7 @@ We will use the `save` api call which is intelligent and will send a PUT request
 ```js
 
 // Here we have set the id of the model
-var user = new Usermodel({
+var user = new UserModel({
   id: 1,
   name: 'Thomas',
   email: 'thomasalwyndavis@gmail.com'
@@ -244,7 +244,7 @@ When a model has an `id` we know that it exists on the server, so if we wish to 
 
 ```js
 // Here we have set the id of the model
-var user = new Usermodel({
+var user = new UserModel({
   id: 1,
   name: 'Thomas',
   email: 'thomasalwyndavis@gmail.com'
