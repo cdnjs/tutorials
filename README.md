@@ -3,7 +3,7 @@
 
 ### Overview
 
-Do you think w3schools sucks? Do you think you could do a way better job? Now you can! Community driven, open source tutorials.
+Do you think w3schools not help you? Do you think you could do a way better job? Now you can! Community driven, open source tutorials.
 
 ### Instructions
 
