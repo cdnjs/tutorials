@@ -26,10 +26,10 @@ Tutorials show under each associated library. At the moment we don't have suppor
 
 ![related tutorials](http://i.imgur.com/mDOePCw.png)
 
-## Why host your tutorial here?
+## Why host your tutorial on cdnjs?
 
-* Cdnjs.com is visited by hundreds of thousands of developers each month, guaranteeing that your tutorial will be viewed.
+* [cdnjs.com](https://cdnjs.com) is visited by hundreds of thousands of web developers every month.
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at any time.
-* Everything is hosted on Github so the community can easily fix bugs and grammatic mistakes in your tutorials.
+* Everything is hosted on Github so the community can easily help fix bugs and grammatic mistakes in your tutorials.
 * Cdnjs is a completely volunteer driven effort where we pay for bills out of our own pockets. Writing tutorials increases our advertising revenue which means we can better improve the project.
