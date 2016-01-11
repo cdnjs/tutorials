@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Thebora Kompanioni",
+    "email": "theborakompanioni+github@gmail.com",
+    "description": "its fine, everythings is fine. theres an infinite number of realities morty, and in a few dozens of those i got lucky and turned everything back to normal.",
+    "homepage": "https://github.com/theborakompanioni"
+  },
+  "description": "Getting started with VisSense.js",
+  "homepage": "https://github.com/theborakompanioni",
+  "keywords": [
+    "vissense",
+    "visibility",
+    "viewtime",
+    "viewport",
+    "visible",
+    "hidden",
+    "monitor",
+    "observe",
+    "tutorial"
+  ],
+  "library-tags": ["vissense"],
+  "name": "Getting started with VisSense.js",
+  "repository": "https://github.com/vissense/vissense"
+}

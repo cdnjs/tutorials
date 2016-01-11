@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Thebora Kompanioni",
+    "email": "theborakompanioni+github@gmail.com",
+    "description": "don't be a baby! you avoid getting shot in real life all the time, morty! just do the same thing here and we'll be fine!",
+    "homepage": "https://github.com/theborakompanioni"
+  },
+  "description": "How to autoplay a video when it becomes visible",
+  "homepage": "https://github.com/theborakompanioni",
+  "keywords": [
+    "vissense",
+    "visibility",
+    "viewtime",
+    "viewport",
+    "visible",
+    "hidden",
+    "monitor",
+    "observe",
+    "tutorial",
+    "video"
+  ],
+  "library-tags": [
+    "vissense"
+  ],
+  "name": "How to autoplay a video when it becomes visible",
+  "repository": "https://github.com/vissense/vissense"
+}
