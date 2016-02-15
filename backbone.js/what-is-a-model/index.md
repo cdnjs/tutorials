@@ -286,7 +286,7 @@ var Human = Backbone.Model.extend({
   },
   initialize: function(){
     alert("Welcome to this world");
-    this.bind("error", function(model, error){
+    this.bind("invalid", function(model, error){
       // We have received an error, log it, alert it or forget it :)
       alert( error );
     });
@@ -294,11 +294,11 @@ var Human = Backbone.Model.extend({
 });
 
 var human = new Human;
-human.set({ name: "Mary Poppins", age: -1 }); 
+human.set({ name: "Mary Poppins", age: -1 }, {validate: true});
 // Will trigger an alert outputting the error
 
 var human = new Human;
-human.set({ name: "Dr Manhatten", age: -1 });
+human.set({ name: "Dr Manhatten", age: -1 }, {validate: true});
 // God have mercy on our souls
 
 ```
