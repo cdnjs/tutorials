@@ -135,11 +135,14 @@ _Using template variables_
     },
     render: function(){
       //Pass variables in using Underscore.js Template
-      var variables = { search_label: "My Search" };
-      // Compile the template using underscore
-      var template = _.template( $("#search_template").html(), variables );
+      var tplVariables = { search_label: "My Search" };
+      //Compile the template into a function using Underscore
+      var template = _.template( $("#search_template").html());
+      // Fill in the template variables with your data by calling the
+      //compiled template as a function
+      var interpolatedTemplate = template(tplVariables);
       // Load the compiled HTML into the Backbone "el"
-      this.$el.html( template );
+      this.$el.html( interpolatedTemplate );
     },
     events: {
       "click input[type=button]": "doSearch"  
