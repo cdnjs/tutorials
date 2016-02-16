@@ -33,7 +33,7 @@ Let us set our view's "el" property to div#search_container, effectively making 
       alert("Alerts suck.");
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 ```
@@ -68,7 +68,7 @@ Let us implement a "render()" function and call it when the view is initialized.
       this.$el.html( template );
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 
@@ -145,14 +145,14 @@ _Using template variables_
       this.$el.html( interpolatedTemplate );
     },
     events: {
-      "click input[type=button]": "doSearch"  
+      "click input[type=button]": "doSearch"
     },
     doSearch: function( event ){
       // Button clicked, you can access the element that was clicked with event.currentTarget
       alert( "Search for " + $("#search_input").val() );
     }
   });
-    
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 
