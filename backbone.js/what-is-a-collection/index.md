@@ -23,7 +23,7 @@ var Song = Backbone.Model.extend({
 });
 
 var Album = Backbone.Collection.extend({
-model: Song
+    model: Song
 });
 
 ```
@@ -39,12 +39,12 @@ var Song = Backbone.Model.extend({
     name: "Not specified",
     artist: "Not specified"
   },
-      initialize: function(){
-          console.log("Music is the answer");
-      }
-  });
+  initialize: function(){
+      console.log("Music is the answer");
+  }
+});
 
-  var Album = Backbone.Collection.extend({
+var Album = Backbone.Collection.extend({
   model: Song
 });
 
