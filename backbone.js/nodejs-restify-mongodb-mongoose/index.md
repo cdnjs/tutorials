@@ -278,3 +278,4 @@ Get in touch with me on twitter, comments or GitHub!
 ### Relevant Links
 
 [Organizing Your Backbone.js Application With Modules](http://weblog.bocoup.com/organizing-your-backbone-js-application-with-modules)
+[Storing Data With Node.js And Mongoose](https://www.kompulsa.com/introduction-mongoose-storing-data-mongodb/)
