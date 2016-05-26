@@ -106,3 +106,35 @@ let TodosList = Skeleton.List({
 * 'model': The model that builds the list.
 * 'element': The html element that will contain the list models.
 * 'template': A string, or an object with templateId field to specify the template.
+
+---
+Here is the server code. This is not the main issue in this tutorial so let's go over it
+really briefly:
+```js
+var express = require('express');
+var path = require('path');
+var app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', main);
+app.get('/all', main);
+app.get('/active', main);
+app.get('/completed', main);
+
+function main(req,res) {
+  res.sendFile(__dirname + '/public/index.html');
+}
+
+app.listen(8000, function(err) {
+  if(err) {
+    return 'An error has occured: ' + err.message;
+  }
+  console.log('Listening on port 8000!');
+});
+```
+
+Basically, we set a simple nodejs express server, and we serve the same file to
+all our paths ('/', '/all', '/active', '/completed') since we are building a spa.
+You will need to install expressjs: ** npm install express --save **,
+and the server will run at  ** localhost:8000 **.
