@@ -1,0 +1,18 @@
+{
+  "author": {
+    "name": "Guy Peer",
+    "email": "guypeer8@gmail.com",
+    "description": "I am a web developer. Creator of SkeletonJS.",
+    "homepage": "https://github.com/guypeer8"
+  },
+  "description": "Skeleton.js Sוubscriptions",
+  "homepage": "https://github.com/guypeer8",
+  "keywords": [
+    "skeleton.js",
+    "js-skeleton",
+    "tutorial"
+  ],
+  "library-tags": ["skeleton.js"],
+  "name": "Skeleton Sוubscriptions",
+  "disqus_shortname": "sktutes"
+}

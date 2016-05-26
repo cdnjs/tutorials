@@ -6,9 +6,12 @@ templates and more.
 Skeleton.js is a tiny library, but still it manages to answer all of the above in an elegant, easy-to-use way.
 give the tutorial 10 minutes and you will see why.
 Please follow the below order:
-* Html, Templates, Models, Lists
+* Templates, Models, Lists
 * Forms
 * Router
+* Functions
+* Subscriptions
+* Starter
 
 > But first, please read this short but very clear documentation: [skeleton documentation](https://github.com/guypeer8/skeleton.js).
 

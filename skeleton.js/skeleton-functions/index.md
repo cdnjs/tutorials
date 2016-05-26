@@ -135,3 +135,4 @@ window.updateSize = () => {
 } 
 ```
 This is a function we want to run to update the size of the todos list after any interaction that may change it.
+When we type 'TodosList.models()' we get the actual models of the todos list.
