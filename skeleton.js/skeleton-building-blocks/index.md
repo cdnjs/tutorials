@@ -1,6 +1,33 @@
-# Setting up the Html and the template for our app
+# Setting up the html, template, model and list for our app
 
-Lets's start with the 'html' body:
+First, let's look at the project structure:
+```js
+|--- public
+|      |--- models
+|      |      |--- TodoModel.js
+|      |
+|      |--- lists
+|      |      |--- TodosList.js
+|      |
+|      |--- forms
+|      |      |--- TodoForm.js
+|      |
+|      |--- utils
+|      |      |--- functions.js
+|      |      |
+|      |      |--- subscriptions.js
+|      |      |
+|      |      |--- starter.js
+|      |
+|      |--- router.js
+|      |
+|      |--- index.html
+|
+|--- server.js
+```
+
+---
+Next, let's set up the 'html' body:
 ```html
 <body>
   <div class="todos-header">

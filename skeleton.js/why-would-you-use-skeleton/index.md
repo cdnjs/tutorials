@@ -6,11 +6,12 @@ templates and more.
 Skeleton.js is a tiny library, but still it manages to answer all of the above in an elegant, easy-to-use way.
 give the tutorial 10 minutes and you will see why.
 Please follow the below order:
-* Html and Templates
-* SkeletonJS Model
-* SkeletonJS List
-* SkeletonJS Router
+* Html, Templates, Models, Lists
+* Forms
+* Router
 
-In the next tutorial, we will start setting up a TodoMVC application, step by step.
+> But first, please read these short but very clear documentation: [skeleton documentation](https://github.com/guypeer8/skeleton.js)
+
+Now that you are done reading, in the next tutorial we will start setting up a TodoMVC application, step by step.
 
 __If you questions regarding why you should choose Skeleton.js as your framework, please leave a comment below__If you

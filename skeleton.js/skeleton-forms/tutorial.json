@@ -5,7 +5,7 @@
     "description": "I am a web developer. Creator of SkeletonJS.",
     "homepage": "https://github.com/guypeer8"
   },
-  "description": "Define SkeletonJS Router",
+  "description": "Skeleton.js form",
   "homepage": "https://github.com/guypeer8",
   "keywords": [
     "skeleton.js",
@@ -13,7 +13,6 @@
     "tutorial"
   ],
   "library-tags": ["skeleton.js"],
-  "name": "SkeletonJS Router",
-  "repository": "https://github.com/thomasdavis/backbonetutorials",
+  "name": "Skeleton Form",
   "disqus_shortname": "sktutes"
 }
