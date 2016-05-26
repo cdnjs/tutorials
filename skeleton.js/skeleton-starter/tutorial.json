@@ -5,7 +5,7 @@
     "description": "I am a web developer. Creator of skeleton.js.",
     "homepage": "https://github.com/guypeer8"
   },
-  "description": "Why use Skeleton.js?",
+  "description": "Skeleton.js starter",
   "homepage": "https://github.com/guypeer8",
   "keywords": [
     "skeleton.js",
@@ -13,6 +13,6 @@
     "tutorial"
   ],
   "library-tags": ["skeleton.js"],
-  "name": "Skeleton- why use",
+  "name": "Skeleton starter",
   "disqus_shortname": "sktutes"
 }
