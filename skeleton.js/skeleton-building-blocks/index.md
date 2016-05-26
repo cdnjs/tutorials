@@ -137,4 +137,4 @@ app.listen(8000, function(err) {
 Basically, we set a simple nodejs express server, and we serve the same file to
 all our paths ('/', '/all', '/active', '/completed') since we are building a spa.
 You will need to install expressjs: *npm install express --save*,
-and the server will run at  *localhost:8000 *.
+and the server will run on *localhost:8000*.
