@@ -27,7 +27,7 @@ We also have 'all', 'active' and 'completed' filters (The 'router.visit' explain
 
 ---
 Ok, now let's define our 'todo-template':
-``html
+```html
 <!-- Todo Template -->
 <template id="todo-template">
   <div data-id="{{ index }}">
