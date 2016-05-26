@@ -47,10 +47,10 @@ Next, let's set up the 'html' body:
 </body>
 ```
 Now let's go over it and break it into parts:
-Functions: 'removeAll' todos, 'clearCompleted' todos. 
-Forms: A 'todo-form' to submit a new todo.
-Lists: A 'todo-list' element which will be the container of our todos. 
-We also have 'all', 'active' and 'completed' filters (The 'router.visit' explained later).
+* Functions: 'removeAll' todos, 'clearCompleted' todos. 
+* Forms: A 'todo-form' to submit a new todo.
+* Lists: A 'todo-list' element which will be the container of our todos. 
+* We also have 'all', 'active' and 'completed' filters (The 'router.visit' explained later).
 
 ---
 Ok, now let's define our 'todo-template':
