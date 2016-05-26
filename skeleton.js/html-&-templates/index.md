@@ -58,7 +58,7 @@ let TodoModel = Skeleton.Model({
     isEditing: false
   },
   init() {
-    console.log('Todo text is: ${this.get('text')}, isCompleted: this.get('isCompleted'));
+    console.log('Todo text is: ${this.get('text')}, isCompleted: ${this.get('isCompleted')});
   }
 });
 ```
@@ -76,6 +76,6 @@ let TodosList = Skeleton.List({
   template: {templateId: 'todo-template'}
 });
 ```
-'model': The model that builds the list.
-'element': The html element that will contain the list models.
-'template': A string, or an object with templateId field to specify the template.
+* 'model': The model that builds the list.
+* 'element': The html element that will contain the list models.
+* 'template': A string, or an object with templateId field to specify the template.
