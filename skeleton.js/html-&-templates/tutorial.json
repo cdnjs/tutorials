@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "Guy Peer",
+    "email": "guypeer8@gmail.com",
+    "description": "I am a web developer. Creator of SkeletonJS.",
+    "homepage": "https://github.com/guypeer8"
+  },
+  "description": "Define SkeletonJS Router",
+  "homepage": "https://github.com/guypeer8",
+  "keywords": [
+    "skeleton.js",
+    "js-skeleton",
+    "tutorial"
+  ],
+  "library-tags": ["skeleton.js"],
+  "name": "Templates, Models, Lists",
+  "repository": "https://github.com/thomasdavis/backbonetutorials",
+  "disqus_shortname": "sktutes"
+}
