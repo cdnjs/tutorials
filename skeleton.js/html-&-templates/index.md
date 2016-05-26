@@ -58,7 +58,7 @@ let TodoModel = Skeleton.Model({
     isEditing: false
   },
   init() {
-    console.log('Todo text is: ${this.get('text')}, isCompleted: ${this.get('isCompleted')});
+    console.log(`Todo text is: ${this.get('text')}, isCompleted: ${this.get('isCompleted')}`);
   }
 });
 ```
