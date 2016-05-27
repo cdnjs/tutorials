@@ -70,10 +70,11 @@ Ok, now let's define our 'todo-template':
   </div>
 </template>
 ```
-Now notice that a template is attached to a model, which we will define in the next article.
+Now notice that a template is attached to a model, which is defined below in this article.
 When you define a template, you actually tell how each model will look. The way to seperate
 templates when they get rendered is by using 'index', which is provided by Skeleton.js for free.
 What you see inside '{{ }}' will get rendered as you push an object to the list array.
+So the 'text' value will get rendered and it will be capitalized.
 
 ---
 Let's define a model, and continue exploring what we see in the template:
