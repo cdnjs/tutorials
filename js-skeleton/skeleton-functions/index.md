@@ -70,16 +70,15 @@ window.setEditedTodo = (event, index) => {
 Now on this function, we pass the event also. If enter key is pressed, we edit the todo text,
 and if escape key is pressed, we quit the editing mode.
 
-* filterTodo
+* filterTodos
+
 ```js
 window.filterTodos = (type) => {
 	if(type === 'all') {
 		TodosList.filter(todo => true);
-	}
-	else if(type === 'active') {
+	} else if(type === 'active') {
 		TodosList.filter(todo => !todo.isCompleted);
-	}
-	else { // type = 'completed'
+	} else { 
 		TodosList.filter(todo => todo.isCompleted);
 	}
 	_styleFilter(type);
@@ -87,7 +86,7 @@ window.filterTodos = (type) => {
 }
 
 // Style on choosing filter
-var filters = {
+const filters = {
 	all: document.getElementById('filter-all'),
 	active: document.getElementById('filter-active'),
 	completed: document.getElementById('filter-completed')
@@ -102,6 +101,7 @@ function _styleFilter(filter) {
 	});
 }
 ```
+
 Filtering todos is done by using the built in 'filter' method. We give it a relevant callback to each
 filter type passed. Then, we style the chosed filter and store the filter in localStorage.
 Skeleton provides a simple API to saving, fetching and clearing data to/from browser localStorage.
