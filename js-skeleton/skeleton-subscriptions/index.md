@@ -8,9 +8,7 @@ For instance, when we 'push' or 'edit' a todo, we want to filter our todo list a
 ```js
 TodosList.subscribe(['push','edit'], () => {
 	let filter = Skeleton.storage.fetch('filter') || 'all';
-	if(filter) {
-		window.filterTodos(filter);
-	}
+	window.filterTodos(filter);
 });
 ```
 

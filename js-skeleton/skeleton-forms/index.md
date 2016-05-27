@@ -1,7 +1,7 @@
 # Skeleton Form
 
 Skeleton gives you a very clean way to organize your forms.
-remember the form part of the template?
+remember the form part of the html?
 ```html
 <form name="todo-form">
   <input type="text" placeholder="What needs to be done?" id="todo-input" />
