@@ -57,17 +57,17 @@ Ok, now let's define our 'todo-template':
 ```html
 <!-- Todo Template -->
 <template id="todo-template">
-  <div data-id="{{ index }}">
-    <input type="checkbox" onChange="toggleTodo({{ index }})" data-checked="isCompleted" />
-    <span onDblclick="editTodo({{ index }})" 
-        data-hide="isEditing" 
-        data-class='{"done": "isCompleted", "bold": "!isCompleted"}'
-    >
-      {{ text | capitalize }}
-    </span>
-    <input type="text" onKeyup="setEditedTodo(event, {{ index }})" value="{{ text }}" data-show="isEditing" />
-    <button onClick="removeTodo({{ index }})">x</button>
-  </div>
+    <div data-id="{{ index }}">
+        <input type="checkbox" onChange="toggleTodo({{ index }})" data-checked="isCompleted" />
+        <span onDblclick="editTodo({{ index }})" 
+            data-hide="isEditing" 
+            data-class='{"done": "isCompleted", "bold": "!isCompleted"}'
+        >
+          {{ text | capitalize }}
+        </span>
+        <input type="text" onKeyup="setEditedTodo(event, {{ index }})" value="{{ text }}" data-show="isEditing" />
+        <button onClick="removeTodo({{ index }})">x</button>
+    </div>
 </template>
 ```
 Now notice that a template is attached to a model, which is defined below in this article.
@@ -79,15 +79,15 @@ So the 'text' value will get rendered and it will be capitalized.
 ---
 Let's define a model, and continue exploring what we see in the template:
 ```js
-let TodoModel = Skeleton.Model({
-  defaults: {
-    text: '',
-    isCompleted: false,
-    isEditing: false
-  },
-  init() {
-    console.log(`Todo text is: ${this.get('text')}, isCompleted: ${this.get('isCompleted')}`);
-  }
+const TodoModel = Skeleton.Model({
+    defaults: {
+        text: '',
+        isCompleted: false,
+        isEditing: false
+    },
+    init() {
+        console.log(`Todo text is: ${this.get('text')}, isCompleted: ${this.get('isCompleted')}`);
+    }
 });
 ```
 The only object needed is the defaults object, to specify constant and changing model fields.
@@ -98,10 +98,10 @@ The 'init' function is called each time a model is initialized.
 Now, we need to define a list. A skeleton list object is what we are going to work with in all
 phases of the application.
 ```js
-let TodosList = Skeleton.List({
-  model: TodoModel,
-  element: 'todo-list',
-  template: {templateId: 'todo-template'}
+const TodosList = Skeleton.List({
+    model: TodoModel,
+    element: 'todo-list',
+    template: {templateId: 'todo-template'}
 });
 ```
 * 'model': The model that builds the list.
@@ -124,14 +124,14 @@ app.get('/active', main);
 app.get('/completed', main);
 
 function main(req,res) {
-  res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 }
 
 app.listen(8000, function(err) {
-  if(err) {
-    return 'An error has occured: ' + err.message;
-  }
-  console.log('Listening on port 8000!');
+    if(err) {
+      return 'An error has occured: ' + err.message;
+    }
+    console.log('Listening on port 8000!');
 });
 ```
 

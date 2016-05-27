@@ -128,6 +128,7 @@ window.removeAll = () => {
 Very easy to remove all models. Simply use the built in 'removeAll' function.
 
 * updateSize
+
 ```js
 var todosSize = document.getElementById('todos-size');
 window.updateSize = () => {
