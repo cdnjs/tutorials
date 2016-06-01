@@ -16,5 +16,5 @@
   ],
   "library-tags": ["backbone.js", "require.js"],
   "name": "React/Redux beginners tutorial",
-  "repository": "https://github.com/thomasdavis/react-redux-tutorials",
+  "repository": "https://github.com/thomasdavis/react-redux-tutorials"
 }
