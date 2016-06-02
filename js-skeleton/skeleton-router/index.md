@@ -35,7 +35,7 @@ be invoked with parameter 'all'.
 
 ```js
 router.visit('/all');
-````
+```
 
 This means visiting the path we predefined, updating the url pathname, and invoking
 the callback function we predefined.
