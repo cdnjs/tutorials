@@ -6,7 +6,7 @@ retrieve the filter and applying the router on it.
 Here is the code snippet:
 
 ```js
-let todos = Skeleton.storage.fetch('todos');
+let todos = Skeleton.storage.fetch('todos') || [];
 TodosList.pushAll(todos); // push all stored todos
 let filter = Skeleton.storage.fetch('filter') || 'all';
 router.visit(`/${filter}`); // go to last saved path

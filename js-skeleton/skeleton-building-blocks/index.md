@@ -101,20 +101,20 @@ phases of the application.
 const TodosList = Skeleton.List({
     model: TodoModel,
     element: 'todo-list',
-    template: {templateId: 'todo-template'}
+    templateId: 'todo-template'
 });
 ```
 * 'model': The model that builds the list.
 * 'element': The html element that will contain the list models.
-* 'template': A string, or an object with templateId field to specify the template.
+* 'template' or 'templateId': A string representing the template, or a templateId which specifies the id of the template element in the html
 
 ---
 Now, let's write our server code. This is not the main issue in this tutorial so let's go over it
 really briefly:
 ```js
-var express = require('express');
-var path = require('path');
-var app = express();
+const express = require('express');
+const path = require('path');
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -127,7 +127,7 @@ function main(req,res) {
     res.sendFile(__dirname + '/public/index.html');
 }
 
-app.listen(8000, function(err) {
+app.listen(8000, (err) => {
     if(err) {
       return 'An error has occured: ' + err.message;
     }
