@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "Dog2puppy",
+    "email": "me@dog2puppy-github.tk",
+    "description": "I love open source and all code.",
+    "homepage": "http://dog2puppy-github.tk/",
+    "twitter": "https://twitter.com/"
+  },
+  "description": "Getting started with animate,css",
+  "homepage": "https://github.com/dog2puppy",
+  "keywords": [
+    "animate.css",
+    "tutorial"
+  ],
+  "library-tags": ["animate.css"],
+  "name": "Getting started with animate.css",
+  "repository": "https://github.com/daneden/animate.css",
+  "disqus_shortname": "dog2puppy",
+  "disqus_url": "N/A"
+}
