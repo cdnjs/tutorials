@@ -14,6 +14,8 @@ After a bit of research and persistence the concepts behind the jargon finally s
 
 I’m still not quite sure how to pronounce it, but Vuex has become an essential piece in my Vue.js toolbelt. I think it’s totally worth your time to check it out too, so I’ve written this primer on Vuex to give you the background that I wish I’d had.
 
+Note: This article was originally posted [here on the Vue.js Developers blog](http://vuejsdevelopers.com/2017/05/15/vue-js-what-is-vuex/?jsdojo_id=cjs_wfv) on 2017/05/15.
+
 ## Understanding The Problem That Vuex Solves
 
 To understand Vuex it’s much easier if you first understand the problem that it’s designed to solve.
@@ -32,7 +34,7 @@ The flaw is most easily understood in the abstract: when you have multiple compo
 
 The idea of Flux was to create a set of guiding principles that describe a scalable front end architecture that sufficiently mitigates this flaw. Not just for a chat app, but in any complex UI app with components and shared data state.
 
-Flux is a pattern, not a library. 
+Flux is a pattern, not a library.
 
 You can’t go to Github and download Flux. It’s a design pattern like MVC. Libraries like Vuex and Redux implement the Flux pattern the same way that other frameworks implement the MVC pattern.
 
@@ -113,4 +115,7 @@ It also allows for cool development features like hot module reloading (updating
 Sound cool. I have some questions…
 
 Maybe you’re wondering now whether or not your app needs Vuex, how it integrates with vue-devtools or how you can commit data from asynchronous functions.
+
 My goal in this article was just to give you a primer on Vuex. I hope you’ll find if you go to the documentation now, you’ll feel well equiped to get these answers yourself.
+
+*Get the latest Vue.js articles, tutorials and cool projects in your inbox with the [Vue.js Developers Newsletter](http://vuejsdevelopers.com/newsletter/?jsdojo_id=cjs_wfv).*
