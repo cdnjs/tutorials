@@ -1,0 +1,18 @@
+{
+  "author": {
+    "name": "Anthony",
+    "email": "anthony@vuejsdevelopers.com",
+    "description": "Web developer, author and online course instructor with Vue.js Developers",
+    "homepage": "http://vuejsdevelopers.com",
+    "twitter": "https://twitter.com/vuejsdevelopers"
+  },
+  "description": "Vuex is one of the most useful tools in the Vue.js ecosystem, but it can be very confusing at first. I've written this primer on Vuex to give you the background that I wish I'd had.",
+  "homepage": "http://vuejsdevelopers.com",
+  "keywords": [
+    "vue.js",
+    "vuex"
+  ],
+  "library-tags": ["vue.js", "vuex"],
+  "name": "WTF is Vuex? A Beginner's Guide To Vue's Application Data Store",
+  "repository": "https://github.com/vuejsdevelopers"
+}
