@@ -10,7 +10,7 @@ Here's a simple list of questions to help you figure out if you should publish a
 - Do you want to help other people learn web development?
 - Did you just learn about something awesome that you think other people would find awesome too?
 
-If you answered yes to any of the above, we want you to write a web developemnt tutorial and publish it on cdnjs! It's super easy!
+If you answered yes to any of the above, we want you to write a web development tutorial and publish it on cdnjs! It's super easy!
 
 ### Instructions
 
