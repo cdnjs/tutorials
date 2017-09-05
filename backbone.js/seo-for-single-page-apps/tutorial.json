@@ -3,8 +3,9 @@
     "name": "Thomas Davis",
     "email": "thomasalwyndavis@gmail.com",
     "description": "I work with a few open source projects and also work in the drone industry",
-    "homepage": "http://thomasdav.is/",
-    "twitter": "thomasdav_is"
+    "homepage": "https://ajaxdavis.com/",
+    "github": "thomasdavis",
+    "twitter": "ajaxdavis"
   },
   "description": "Organizing your application using Modules (require.js)",
   "homepage": "https://github.com/thomasdavis",
