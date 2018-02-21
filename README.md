@@ -22,7 +22,7 @@ We want to make a super beautiful and useful tutorial system where anyone can ge
 
 ## Tutorial Listings
 
-Tutorials show under each associated library. At the moment we don't have support for generic Javascript tutorials but please leave an issue if you want to write one.
+Tutorials show under each associated library. At the moment we don't have support for generic JavaScript tutorials but please leave an issue if you want to write one.
 
 ![related tutorials](http://i.imgur.com/mDOePCw.png)
 
@@ -31,5 +31,5 @@ Tutorials show under each associated library. At the moment we don't have suppor
 * [cdnjs.com](https://cdnjs.com) is visited by hundreds of thousands of web developers every month.
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at any time.
-* Everything is hosted on Github so the community can easily help fix bugs and grammatic mistakes in your tutorials.
+* Everything is hosted on GitHub so the community can easily help fix bugs and grammatic mistakes in your tutorials.
 * Cdnjs is a completely volunteer driven effort where we pay for bills out of our own pockets. Writing tutorials increases our advertising revenue which means we can better improve the project.
