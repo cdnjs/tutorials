@@ -2,15 +2,14 @@
 ## Introduction 
 
 Next.js is a framework for quickly building universal (also called Isomorphic) server-rendered web apps with 
-React. In this tutorial i'm going to get you started with Next.js to build an example demo app showing the 
-essential concepts of server rendered React apps.
+React. In this tutorial you will learn essential concepts of server-rendered React apps by creating a demo app with Next.js.
 
-Building apps with Next.js is dead easy, you just create a <em>pages</em> directory and place React components in it.
+Building apps with Next.js is simple. You just create a <em>pages</em> directory and place React components in it.
  Next.js will take care of everything else.
 
 This tutorial was originally published in [techiediaries](https://www.techiediaries.com/universal-react-apps-nextjs/)
 
-Now lets get started 
+Now let's get started 
 
 First we need to install the required tools:
 
