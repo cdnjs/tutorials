@@ -33,7 +33,7 @@ Let us set our view's "el" property to div#search_container, effectively making 
       alert("Alerts suck.");
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 ```
@@ -68,7 +68,7 @@ Let us implement a "render()" function and call it when the view is initialized.
       this.$el.html( template );
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 
@@ -135,21 +135,24 @@ _Using template variables_
     },
     render: function(){
       //Pass variables in using Underscore.js Template
-      var variables = { search_label: "My Search" };
-      // Compile the template using underscore
-      var template = _.template( $("#search_template").html(), variables );
+      var tplVariables = { search_label: "My Search" };
+      //Compile the template into a function using Underscore
+      var template = _.template( $("#search_template").html());
+      // Fill in the template variables with your data by calling the
+      //compiled template as a function
+      var interpolatedTemplate = template(tplVariables);
       // Load the compiled HTML into the Backbone "el"
-      this.$el.html( template );
+      this.$el.html( interpolatedTemplate );
     },
     events: {
-      "click input[type=button]": "doSearch"  
+      "click input[type=button]": "doSearch"
     },
     doSearch: function( event ){
       // Button clicked, you can access the element that was clicked with event.currentTarget
       alert( "Search for " + $("#search_input").val() );
     }
   });
-    
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 

@@ -5,7 +5,7 @@ Across the internet the definition of [MVC](http://en.wikipedia.org/wiki/Model%E
 > Models are the heart of any JavaScript application, containing the interactive data as well as a large part of the logic surrounding it: conversions, validations, computed properties, and access control.
 
 So for the purpose of the tutorial let's create a `model`.
-    
+
 
 ```js
 var Human = Backbone.Model.extend({
@@ -40,7 +40,7 @@ human.set({ name: "Thomas", age: 67});
 
 ```
 
-So passing a JavaScript object to our constructor is the same as calling _model.set()_.   Now that these models have attributes set we need to be able to retrieve them.  
+So passing a JavaScript object to our constructor is the same as calling _model.set()_.   Now that these models have attributes set we need to be able to retrieve them.
 
 ## Getting attributes
 
@@ -108,7 +108,7 @@ human.adopt('John Resig');
 var child = human.get("child"); // 'John Resig'
 ```
 
-So we can implement methods to get/set and perform other calculations using attributes from our model at any time.   
+So we can implement methods to get/set and perform other calculations using attributes from our model at any time.
 
 ## Listening for changes to the model
 
@@ -160,7 +160,7 @@ var UserModel = Backbone.Model.extend({
 
 ### Creating a new model
 
-If we wish to create a new user on the server then we will instantiate a new UserModel and call `save`.  If the `id` attribute of the model is `null`, Backbone.js will send a POST request to the urlRoot of the server. 
+If we wish to create a new user on the server then we will instantiate a new UserModel and call `save`.  If the `id` attribute of the model is `null`, Backbone.js will send a POST request to the urlRoot of the server.
 
 ```js
 var UserModel = Backbone.Model.extend({
@@ -251,7 +251,7 @@ var user = new UserModel({
 });
 
 // Because there is id present, Backbone.js will fire
-// DELETE /user/1 
+// DELETE /user/1
 user.destroy({
   success: function () {
     alert('Destroyed');
@@ -286,7 +286,7 @@ var Human = Backbone.Model.extend({
   },
   initialize: function(){
     alert("Welcome to this world");
-    this.bind("error", function(model, error){
+    this.bind("invalid", function(model, error){
       // We have received an error, log it, alert it or forget it :)
       alert( error );
     });
@@ -294,13 +294,13 @@ var Human = Backbone.Model.extend({
 });
 
 var human = new Human;
-human.set({ name: "Mary Poppins", age: -1 }); 
+human.set({ name: "Mary Poppins", age: -1 }, {validate: true});
 // Will trigger an alert outputting the error
 
 var human = new Human;
-human.set({ name: "Dr Manhatten", age: -1 });
+human.set({ name: "Dr Manhatten", age: -1 }, {validate: true});
 // God have mercy on our souls
-    
+
 ```
 
 ### Contributors
