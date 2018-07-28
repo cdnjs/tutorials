@@ -50,22 +50,22 @@ This single location is called the “store”. Components must read application
 ```js
 // Instantiate our Vuex store
 const store = new Vuex.Store({
-  
+
   // "State" is the application data your components
   // will subscribe to
-  
-  state: {     
-    myValue: 0   
+
+  state: {
+    myValue: 0
   }
 });
 // Components access state from their computed properties
-const MyComponent = {   
+const MyComponent = {
   template: `<div>{{ myValue }}</div>`,
   computed: {
     myValue () {
       return store.state.myValue;
-    }   
-  } 
+    }
+  }
 };
 ```
 
@@ -78,15 +78,15 @@ Instead they must inform the store of their intent to change the data and the st
 Why this approach? If we centralise the data-altering logic than we don’t have to look far if there are inconsistencies in the state. We’re minimising the possibility that some random component (possibly in a third party module) has changed the data in an unexpected fashion.
 
 ```js
-const store = new Vuex.Store({ 
-  state: { 
+const store = new Vuex.Store({
+  state: {
     myValue: 0
-  }, 
-  mutations: { 
-    increment (state, value) { 
+  },
+  mutations: {
+    increment (state, value) {
       state.myValue += value;
     }
-  } 
+  }
 });
 // Need to update a value?
 // Wrong! Don't directly change a store value.

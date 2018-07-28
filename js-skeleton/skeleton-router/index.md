@@ -16,14 +16,16 @@ router.path('/completed', () => filterTodos('completed'));
 ```
 
 Now, remember this piece of html?
+
 ```html
 <span id="filter-all" onClick="router.visit('/all')">All</span>
 <span id="filter-active" onClick="router.visit('/active')">Active</span>
 <span id="filter-completed" onClick="router.visit('/completed')">Completed</span>
 ```
+
 What we did is simply defining what path we want to visit, means what path we want
 the url to show, and what callback function we want to apply as this path is activated.
-We have not yet defined the 'filterTodos' function, however this is clear what it meant 
+We have not yet defined the 'filterTodos' function, however this is clear what it meant
 to happen here.
 
 ```js

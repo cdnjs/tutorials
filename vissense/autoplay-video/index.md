@@ -7,7 +7,7 @@ Say you want to start a video when it is fully visible and stop it as soon as it
 
 You can do this my using a VisSense `monitor`.
 A monitor is an object observing the visibility of your element providing
- the opportunity to react on certain events e.g. 
+ the opportunity to react on certain events e.g.
 visibility state changes (element becomes `hidden`, `visible` or `fullyvisible`),
 percentage changes (visible area increases/decreases, etc.).
 But you can even extend monitors with custom functionality and send your own events!
@@ -32,12 +32,14 @@ VisSense.VisMon.Builder(VisSense(myVideo))
 Simple as that. But what have we done?
 The monitor comes with a nice builder style syntax.
 So what we do is the following:
+
 - Create an instance of a monitor *builder* and give it an instance of a VisSense object with our video.
 - We register a 'play' and a 'pause' callback ...
 - turn the builder into a monitor object with `build()` ...
 - and immediately start it  with `start()`
 
 Here is more verbose version with comments (waaay too verbose):
+
 ```js
 // locate the DOM element
 var myVideo = document.getElementById('myVideo');
@@ -72,8 +74,8 @@ we just declare the element to be fully visible when 75% of it is visible:
 ```js
 var myVideo = document.getElementById('myVideo');
 
-VisSense.VisMon.Builder(VisSense(myVideo, { 
-    fullyvisible: 0.75 
+VisSense.VisMon.Builder(VisSense(myVideo, {
+    fullyvisible: 0.75
 }))
 .on('fullyvisible', function() {
     myVideo.play();
@@ -84,6 +86,7 @@ VisSense.VisMon.Builder(VisSense(myVideo, {
 .build()
 .start();
 ```
+
 See this example live and [try it on jsbin.com](https://jsbin.com/maqaco/edit?js,output).
 
 Protip: if you ever want a monitor to stop observing the element you simply invoke the `stop()` method.

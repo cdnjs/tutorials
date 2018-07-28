@@ -1,7 +1,7 @@
 
-## Introduction 
+## Introduction
 
-Next.js is a framework for quickly building universal (also called Isomorphic) server-rendered web apps with 
+Next.js is a framework for quickly building universal (also called Isomorphic) server-rendered web apps with
 React. In this tutorial you will learn essential concepts of server-rendered React apps by creating a demo app with Next.js.
 
 Building apps with Next.js is simple. You just create a <em>pages</em> directory and place React components in it.
@@ -9,32 +9,31 @@ Building apps with Next.js is simple. You just create a <em>pages</em> directory
 
 This tutorial was originally published in [techiediaries](https://www.techiediaries.com/universal-react-apps-nextjs/)
 
-Now let's get started 
+Now let's get started
 
 First we need to install the required tools:
 
-## Installing Next.js 2.0 
+## Installing Next.js 2.0
 
 You can install Next.js 2.0 via npm with:
 
     npm install --save next react react-dom
 
-## Installing Next.js 3.0 
+## Installing Next.js 3.0
 
  Next.js 3.0 is still in beta, you can also install it via npm with:
 
     npm install next@beta react react-dom --save
 
-
-## Adding NPM Scripts to package.json 
+## Adding NPM Scripts to package.json
 
 Building apps with Next.js is a matter of using three commands:
 
     next
     next build
-    next start 
+    next start
 
-So lets add NPM scripts to trigger these commands: 
+So lets add NPM scripts to trigger these commands:
 
   "scripts": {
     "dev": "next",
@@ -42,14 +41,13 @@ So lets add NPM scripts to trigger these commands:
     "start": "next start"
   },
 
-
-## Adding Pages 
+## Adding Pages
 
 To create pages you first need to create a pages directory:
 
-    mkdir pages 
+    mkdir pages
 
-### Adding the Home Page 
+### Adding the Home Page
 
 Create an index.js file inside pages folder and put this content in it:
 
@@ -57,14 +55,13 @@ Create an index.js file inside pages folder and put this content in it:
     export default () => (
     <div>
                 <Link href='/'><a>Home</a></Link> -
-                <Link href='/about'><a>About Me</a></Link> - 
-                <Link href='/contact'><a>Contact</a></Link>  
+                <Link href='/about'><a>About Me</a></Link> -
+                <Link href='/contact'><a>Contact</a></Link>
                 <br></br>
                 <p>This is the home page</p>
-                
+
     </div>
     )
-
 
 ### Adding the About Page
 
@@ -74,15 +71,14 @@ Next create an about.js file inside pages folder then put the following content:
     export default () => (
     <div>
                 <Link href='/'><a>Home</a></Link> -
-                <Link href='/about'><a>About Me</a></Link> - 
-                <Link href='/contact'><a>Contact</a></Link>  
+                <Link href='/about'><a>About Me</a></Link> -
+                <Link href='/contact'><a>Contact</a></Link>
                 <br></br>
                 <p>This is about page</p>
     </div>
     )
 
-
-### Adding the Contact Page 
+### Adding the Contact Page
 
 Add contact.js file inside pages folder then put the following:
 
@@ -90,27 +86,25 @@ Add contact.js file inside pages folder then put the following:
     export default () => (
     <div>
                 <Link href='/'><a>Home</a></Link> -
-                <Link href='/about'><a>About Me</a></Link> - 
-                <Link href='/contact'><a>Contact</a></Link>  
+                <Link href='/about'><a>About Me</a></Link> -
+                <Link href='/contact'><a>Contact</a></Link>
                 <br></br>
                 <p>This is the contact page</p>
-                
+
     </div>
     )
 
-
-
 Now you can launch next with:
 
-    npm run dev 
+    npm run dev
 
 Your app will be available from [http://localhost:3000](http://localhost:3000).
 
 As you can see the names of files inside pages directory become the routes except for / which points to index.js
 
-## Conclusion 
+## Conclusion
 
-Universal apps become very popular in these days and thanks to React and Next.js you can build them in a matter 
+Universal apps become very popular in these days and thanks to React and Next.js you can build them in a matter
 of a few commands.
 
 Thanks for reading!

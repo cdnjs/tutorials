@@ -2,6 +2,7 @@
 
 Skeleton gives you a very clean way to organize your forms.
 remember the form part of the html?
+
 ```html
 <form name="todo-form">
   <input type="text" placeholder="What needs to be done?" id="todo-input" />
@@ -9,6 +10,7 @@ remember the form part of the html?
 ```
 
 Let's use skeleton to give readable structure to the javascript:
+
 ```js
 Skeleton.form({
     name: 'todo-form',

@@ -2,7 +2,7 @@
 
 This tutorial will show you how to index your application on search engines.   As the author I believe that servers should be completely independent of the client in the age of API's.  Which speeds up development for the ever increasing array of clients.   It is on the shoulders of the search engines to conform and they should not dictate how the web is stored and accessed.
 
-In 2009 Google released the idea of [escaped fragments](http://googlewebmastercentral.blogspot.com.au/2009/10/proposal-for-making-ajax-crawlable.html).   
+In 2009 Google released the idea of [escaped fragments](http://googlewebmastercentral.blogspot.com.au/2009/10/proposal-for-making-ajax-crawlable.html).
 
 The idea simply stating that if a search engine should come across your JavaScript application then you have the permission to redirect the search engine to another URL that serves the fully rendered version of the page (The current search engines cannot execute much JavaScript (Some people speculate that Google Chrome was born of Google Search wishing to successfully render every web page to retrieve ajaxed content)).
 
@@ -30,8 +30,8 @@ var app = express();
 
 var getContent = function(url, callback) {
   var content = '';
-  // Here we spawn a phantom.js process, the first element of the 
-  // array is our phantomjs script and the second element is our url 
+  // Here we spawn a phantom.js process, the first element of the
+  // array is our phantomjs script and the second element is our url
   var phantom = require('child_process').spawn('phantomjs', ['phantom-server.js', url]);
   phantom.stdout.setEncoding('utf8');
   // Our phantom.js script is simply logging the output and
@@ -117,7 +117,6 @@ RewriteRule (.*) http://webserver:3000/%1? [P]
 ```
 
 We could also include other `RewriteCond`, such as `user agent` to redirect other search engines we wish to be indexed on.
-
 
 Though Google won't use `_escaped_fragment_` unless we tell it to by either including a meta tag;
 `<meta name="fragment" content="!">`

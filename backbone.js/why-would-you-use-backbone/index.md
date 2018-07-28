@@ -8,11 +8,9 @@ I shouldn't need to explain why building something without any structure is a ba
 
 Backbone.js enforces that communication to the server should be done entirely through a RESTful API. The web is currently trending such that all data/content will be exposed through an API. This is because the browser is no longer the only client, we now have mobile devices, tablet devices, Google Goggles and electronic fridges etc.
 
-
 ## So how does Backbone.js help?
 
 Backbone is an incredibly small library for the amount of functionality and structure it gives you. It is essentially MVC for the client and allows you to make your code modular. If you read through some of the beginner tutorials the benefits will soon become self evident and due to Backbone.js light nature you can incrementally include it in any current or future projects.
-
 
 ## Other frameworks
 
@@ -20,7 +18,6 @@ If you are looking for comparisons to build your single page application, try so
 
 * [A feature comparison of different frontend frameworks](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
 * [Todo MVC - Todo list implemented in the many different types of frontend frameworks](http://todomvc.com/)
-
 
 ### Contributors
 

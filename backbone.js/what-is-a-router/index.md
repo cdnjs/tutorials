@@ -1,6 +1,6 @@
 # What is a router?
 
-Backbone routers are used for routing your applications URL's when using hash tags(#).   In the traditional MVC sense they don't necessarily fit the semantics and if you have read "[What is a view?](http://backbonetutorials.com/what-is-a-view)" it will elaborate on this point.   Though a Backbone "router" is still very useful for any application/feature that needs URL routing/history capabilities.   
+Backbone routers are used for routing your applications URL's when using hash tags(#).   In the traditional MVC sense they don't necessarily fit the semantics and if you have read "[What is a view?](http://backbonetutorials.com/what-is-a-view)" it will elaborate on this point.   Though a Backbone "router" is still very useful for any application/feature that needs URL routing/history capabilities.
 
 Defined routers should always contain at least one route and a function to map the particular route to.   In the example below we are going to define a route that is always called.
 
@@ -22,7 +22,6 @@ app_router.on('route:defaultRoute', function(actions) {
 
 // Start Backbone history a necessary step for bookmarkable URL's
 Backbone.history.start();
-
 ```
 
 [Activate route](#action)
@@ -30,7 +29,6 @@ Backbone.history.start();
 [Activate another route](#/route/action)
 
 _Notice the change in the url_
-
 
 ## Dynamic Routing
 
@@ -40,7 +38,7 @@ Most conventional frameworks allow you to define routes that contain a mix of st
 var AppRouter = Backbone.Router.extend({
     routes: {
         "posts/:id": "getPost",
-        "*actions": "defaultRoute" 
+        "*actions": "defaultRoute"
         // Backbone will try to match the route above first
     }
 });
@@ -48,10 +46,10 @@ var AppRouter = Backbone.Router.extend({
 var app_router = new AppRouter;
 app_router.on('route:getPost', function (id) {
     // Note the variable in the route definition being passed in here
-    alert( "Get post number " + id );   
+    alert( "Get post number " + id );
 });
 app_router.on('route:defaultRoute', function (actions) {
-    alert( actions ); 
+    alert( actions );
 });
 // Start Backbone history a necessary step for bookmarkable URL's
 Backbone.history.start();
@@ -62,7 +60,6 @@ Backbone.history.start();
 [Post 130](#/posts/130)
 
 _Notice the change in the url_
-
 
 ## Dynamic Routing Cont. ":params" and "\*splats"
 
@@ -77,25 +74,25 @@ routes: {
 
     "posts/:id": "getPost",
     // <a href="http://example.com/#/posts/121">Example</a>
-    
+
     "download/*path": "downloadFile",
     // <a href="http://example.com/#/download/user/images/hey.gif">Download</a>
-    
+
     ":route/:action": "loadView",
     // <a href="http://example.com/#/dashboard/graph">Load Route/Action View</a>
-    
+
 },
 
-app_router.on('route:getPost', function( id ){ 
-    alert(id); // 121 
+app_router.on('route:getPost', function( id ){
+    alert(id); // 121
 });
 
-app_router.on('route:downloadFile', function( path ){ 
-    alert(path); // user/images/hey.gif 
+app_router.on('route:downloadFile', function( path ){
+    alert(path); // user/images/hey.gif
 });
 
-app_router.on('route:loadView', function( route, action ){ 
-    alert(route + "_" + action); // dashboard_graph 
+app_router.on('route:loadView', function( route, action ){
+    alert(route + "_" + action); // dashboard_graph
 });
 ```
 
@@ -104,6 +101,7 @@ Routes are quite powerful and in an ideal world your application should never co
 Remember to do a pull request for any errors you come across.
 
 ### Relevant Links
+
 * [Backbone.js official router documentation](http://backbonejs.org/#Router)
 * [Using routes and understanding the hash tag](http://thomasdavis.github.com/2011/02/07/making-a-restful-ajax-app.html)
 

@@ -1,4 +1,4 @@
-# Simple example - Node.js, Restify, MongoDb and Mongoose 
+# Simple example - Node.js, Restify, MongoDb and Mongoose
 
 Before I start, the Backbone.js parts of this tutorial will be using techniques described in "Organizing your application using [Modules](http://backbonetutorials.com/organizing-backbone-using-modules/) to construct a simple guestbook.
 
@@ -19,7 +19,6 @@ This stack is great for rapid prototyping and highly intuitive. Personal note: I
 ### Node.js
 
 "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
-
 
 ### Restify
 
@@ -42,7 +41,7 @@ In the example repository there is a server.js example which can be executed by 
 The first thing to do is require the Restify module. Restify will be in control of handling our restful endpoints and returning the appropriate JSON.
 
 ```js
-var restify = require('restify');  
+var restify = require('restify');
 var server = restify.createServer();
 server.use(restify.bodyParser());
 ```
@@ -50,7 +49,6 @@ server.use(restify.bodyParser());
 Note: bodyParser() takes care of turning your request data into a JavaScript object on the server automatically.
 
 ## MongoDb/Mongoose configuration
-
 
 We simply want to require the MongoDb module and pass it a MongoDb authentication URI  e.g. mongodb://username:server@mongoserver:10059/somecollection
 
@@ -60,7 +58,7 @@ The code below presupposes you have another file in the same directory called _c
 var mongoose = require('mongoose/');
 var config = require('./config');
 db = mongoose.connect(config.creds.mongoose_auth),
-Schema = mongoose.Schema;  
+Schema = mongoose.Schema;
 ```
 
 ## Mongoose Schema
@@ -74,8 +72,8 @@ var MessageSchema = new Schema({
   date: Date
 });
 // Use the schema to register a model with MongoDb
-mongoose.model('Message', MessageSchema); 
-var Message = mongoose.model('Message'); 
+mongoose.model('Message', MessageSchema);
+var Message = mongoose.model('Message');
 ```
 
 _Note: Message can now be used for all things CRUD related.
@@ -89,7 +87,7 @@ Just like in Backbone, Restify allows you to configure different routes and thei
 function getMessages(req, res, next) {
   // Resitify currently has a bug which doesn't allow you to set default headers
   // This headers comply with CORS and allow us to server our response to any origin
-  res.header("Access-Control-Allow-Origin", "*"); 
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   // .find() without any arguments, will return all results
   // the `-1` in .sort() means descending order
@@ -121,7 +119,6 @@ server.post('/messages', postMessage);
 This wraps up the server side of things, if you follow the [example](https://github.com/thomasdavis/backbonetutorials/blob/gh-pages/examples/nodejs-mongodb-mongoose-restify/server.js) then you should see something like
 
 [http://backbonetutorials.nodejitsu.com/messages](http://backbonetutorials.nodejitsu.com/messages)
-
 
 _Note: Again you must remember to change the [Model](https://github.com/thomasdavis/backbonetutorials/blob/gh-pages/examples/nodejs-mongodb-mongoose-restify/js/models/message.js) and [Collection](https://github.com/thomasdavis/backbonetutorials/blob/gh-pages/examples/nodejs-mongodb-mongoose-restify/js/collections/messages.js) definitions to match your server address._
 
@@ -177,7 +174,7 @@ define([
     el: '.guestbook-form-container',
     render: function () {
       $(this.el).html(guestbookFormTemplate);
-      
+
     },
     events: {
       'click .post-message': 'postMessage'

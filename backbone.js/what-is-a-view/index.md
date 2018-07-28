@@ -33,7 +33,7 @@ Let us set our view's "el" property to div#search_container, effectively making 
       alert("Alerts suck.");
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
 ```
@@ -47,7 +47,6 @@ Backbone.js is dependent on Underscore.js, which includes its own micro-templati
 Let us implement a "render()" function and call it when the view is initialized. The "render()" function will load our template into the view's "el" property using jQuery.
 
 ```html
-
 <script type="text/template" id="search_template">
   <label>Search</label>
   <input type="text" id="search_input" />
@@ -68,10 +67,9 @@ Let us implement a "render()" function and call it when the view is initialized.
       this.$el.html( template );
     }
   });
-  
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
-
 ```
 
 _Tip: Place all your templates in a file and serve them from a CDN. This ensures your users will always have your application cached._
@@ -110,9 +108,7 @@ To attach a listener to our view, we use the "events" attribute of Backbone.View
 
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
-
 ```
-
 
 ## Tips and Tricks
 
@@ -142,17 +138,16 @@ _Using template variables_
       this.$el.html( template );
     },
     events: {
-      "click input[type=button]": "doSearch"  
+      "click input[type=button]": "doSearch"
     },
     doSearch: function( event ){
       // Button clicked, you can access the element that was clicked with event.currentTarget
       alert( "Search for " + $("#search_input").val() );
     }
   });
-    
+
   var search_view = new SearchView({ el: $("#search_container") });
 </script>
-
 ```
 
 ### Relevant Links
@@ -160,8 +155,6 @@ _Using template variables_
 * [This example implemented with google API](http://thomasdavis.github.com/2011/02/05/backbone-views-and-templates.html)
 * [This examples exact code on jsfiddle.net](http://jsfiddle.net/thomas/C9wew/4/)
 * [Another semi-complete example on jsFiddle](http://jsfiddle.net/thomas/dKK9Y/6/)
-
-
 
 ### Contributors
 

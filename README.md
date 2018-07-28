@@ -1,18 +1,18 @@
+# Cdnjs Tutorials
 
-## Cdnjs Tutorials
-
-### Overview
+## Overview
 
 We want you to help us write awesome web development tutorials! Community driven open source tutorials. By developers, for developers.
 
 Here's a simple list of questions to help you figure out if you should publish a web development tutorial on cdnjs:
-- Do you love web development?
-- Do you want to help other people learn web development?
-- Did you just learn about something awesome that you think other people would find awesome too?
+
+* Do you love web development?
+* Do you want to help other people learn web development?
+* Did you just learn about something awesome that you think other people would find awesome too?
 
 If you answered yes to any of the above, we want you to write a web development tutorial and publish it on cdnjs! It's super easy!
 
-### Instructions
+## Instructions
 
 Simply fork the repository and copy the [example tutorial](https://github.com/cdnjs/tutorials/tree/master/backbone.js/organizing-backbone-using-modules)
 

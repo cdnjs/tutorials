@@ -1,6 +1,7 @@
 # Setting up the html, template, model and list for our app
 
 First, let's look at the project structure:
+
 ```js
 |--- public
 |      |--- models
@@ -27,7 +28,9 @@ First, let's look at the project structure:
 ```
 
 ---
+
 Next, let's set up the 'html' body:
+
 ```html
 <body>
   <div class="todos-header">
@@ -46,21 +49,25 @@ Next, let's set up the 'html' body:
   </div>
 </body>
 ```
+
 Now let's go over it and break it into parts:
-* Functions: 'removeAll' todos, 'clearCompleted' todos. 
+
+* Functions: 'removeAll' todos, 'clearCompleted' todos.
 * Forms: A 'todo-form' to submit a new todo.
-* Lists: A 'todo-list' element which will be the container of our todos. 
+* Lists: A 'todo-list' element which will be the container of our todos.
 * We also have 'all', 'active' and 'completed' filters (The 'router.visit' explained later).
 
 ---
+
 Ok, now let's define our 'todo-template':
+
 ```html
 <!-- Todo Template -->
 <template id="todo-template">
     <div data-id="{{ index }}">
         <input type="checkbox" onChange="toggleTodo({{ index }})" data-checked="isCompleted" />
-        <span onDblclick="editTodo({{ index }})" 
-            data-hide="isEditing" 
+        <span onDblclick="editTodo({{ index }})"
+            data-hide="isEditing"
             data-class='{"done": "isCompleted", "bold": "!isCompleted"}'
         >
           {{ text | capitalize }}
@@ -70,6 +77,7 @@ Ok, now let's define our 'todo-template':
     </div>
 </template>
 ```
+
 Now notice that a template is attached to a model, which is defined below in this article.
 When you define a template, you actually tell how each model will look. The way to seperate
 templates when they get rendered is by using 'index', which is provided by Skeleton.js for free.
@@ -77,7 +85,9 @@ What you see inside '{{ }}' will get rendered as you push an object to the list 
 So the 'text' value will get rendered and it will be capitalized.
 
 ---
+
 Let's define a model, and continue exploring what we see in the template:
+
 ```js
 const TodoModel = Skeleton.Model({
     defaults: {
@@ -90,13 +100,16 @@ const TodoModel = Skeleton.Model({
     }
 });
 ```
+
 The only object needed is the defaults object, to specify constant and changing model fields.
 Each of our models has 'text', 'isCompleted' and 'isEditing' fields.
 The 'init' function is called each time a model is initialized.
 
 ---
+
 Now, we need to define a list. A skeleton list object is what we are going to work with in all
 phases of the application.
+
 ```js
 const TodosList = Skeleton.List({
     model: TodoModel,
@@ -104,13 +117,16 @@ const TodosList = Skeleton.List({
     templateId: 'todo-template'
 });
 ```
+
 * 'model': The model that builds the list.
 * 'element': The html element that will contain the list models.
 * 'template' or 'templateId': A string representing the template, or a templateId which specifies the id of the template element in the html
 
 ---
+
 Now, let's write our server code. This is not the main issue in this tutorial so let's go over it
 really briefly:
+
 ```js
 const express = require('express');
 const path = require('path');

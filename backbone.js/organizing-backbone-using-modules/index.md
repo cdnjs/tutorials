@@ -38,7 +38,6 @@ To easily understand this tutorial you should jump straight into the example cod
 
 [Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/modular-backbone)
 
-
 The tutorial is only loosely coupled with the example and you will find the example to be more comprehensive.
 
 If you would like to see how a particular use case would be implemented please visit the GitHub page and create an issue.(Example Request: How to do nested views).
@@ -166,8 +165,6 @@ require([
 Any modules we develop for our application using AMD/Require.js will be asynchronously loaded.
 
 We have a heavy dependency on jQuery, Underscore and Backbone, unfortunately this libraries are loaded synchronously and also depend on each other existing in the global namespace.
-
-
 
 ## A boiler plate module
 

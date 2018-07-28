@@ -4,7 +4,6 @@ This tutorial will teach you how to completely separate the server and client al
 
 On a personal note, I consider this development practice highly desirable and encourage others to think of the possible benefits but the security still needs to be proved.
 
-
 > Cross-Origin Resource Sharing (CORS) is a specification that enables a truly open access across domain-boundaries. - [enable-cors.org](http://enable-cors.org/)
 
 **Some benefits include**
@@ -14,7 +13,6 @@ On a personal note, I consider this development practice highly desirable and en
 * Develop only one API on the server, your front-end could be outsourced or built by a in-house team.
 * As a front-end developer you can host the client anywhere.
 * This separation enforces that the API be built robustly, documented, collaboratively and versioned.
-
 
 ** Cons of this tutorial **
 
@@ -37,7 +35,6 @@ Host the codebase on a simple HTTP server such that the domain is `localhost` wi
 
 [Example Demo](http://thomasdavis.github.io/backbonetutorials/examples/cross-domain/)
 
-
 This tutorial focuses on building a flexible Session model to control session state in your application.
 
 ## Checking session state at first load
@@ -52,7 +49,7 @@ define([
   'vm',
   'events',
   'models/session',
-  'text!templates/layout.html' 
+  'text!templates/layout.html'
 ], function($, _, Backbone, Vm, Events, Session, layoutTemplate){
   var AppView = Backbone.View.extend({
     el: '.container',
@@ -62,7 +59,7 @@ define([
         //options.url = 'http://localhost:8000' + options.url;
         options.url = 'http://cross-domain.nodejitsu.com' + options.url;
       });
-    
+
     },
     render: function () {
       var that = this;
@@ -74,7 +71,7 @@ define([
       Session.getAuth(function () {
         Backbone.history.start();
       })
-    } 
+    }
   });
   return AppView;
 });
@@ -93,7 +90,7 @@ define([
   'backbone'
 ], function(_, Backbone) {
   var SessionModel = Backbone.Model.extend({
-  
+
     urlRoot: '/session',
     initialize: function () {
       var that = this;
@@ -113,7 +110,7 @@ define([
     login: function(creds) {
       // Do a POST to /session and send the serialized form creds
       this.save(creds, {
-         success: function () {}
+        success: function () {}
       });
     },
     logout: function() {
@@ -127,9 +124,9 @@ define([
           // The server also returns a new csrf token so that
           // the user can relogin without refreshing the page
           that.set({auth: false, _csrf: resp._csrf});
-          
+
         }
-      });      
+      });
     },
     getAuth: function(callback) {
       // getAuth is wrapped around our router
@@ -176,7 +173,7 @@ define([
       if(Session.get('auth')){
         this.$el.html(_.template(exampleLogoutTemplate, {username: Session.get('username')}));
       } else {
-        this.$el.html(exampleLoginTemplate); 
+        this.$el.html(exampleLoginTemplate);
       }
     },
     events: {
@@ -257,7 +254,6 @@ This server has 3 endpoints, that are pseudo-restful;
 * GET /session - Checks Auth - Simply returns if auth is true or false, if true then also returns some session details
 
 ```js
-
 var express = require('express');
 
 var connect = require('connect');
@@ -273,7 +269,7 @@ var allowCrossDomain = function(req, res, next) {
     'http://backbonetutorials.com',
     'http://localhost'
   ];
-  
+
   if(allowedHost.indexOf(req.headers.origin) !== -1) {
     res.header('Access-Control-Allow-Credentials', true);
     res.header('Access-Control-Allow-Origin', req.headers.origin)
@@ -293,7 +289,7 @@ app.configure(function() {
     app.use(csrf.check);
 });
 
-app.get('/session', function(req, res){ 
+app.get('/session', function(req, res){
   // This checks the current users auth
   // It runs before Backbones router is started
   // we should return a csrf token for Backbone to use
@@ -304,7 +300,7 @@ app.get('/session', function(req, res){
   }
 });
 
-app.post('/session', function(req, res){  
+app.post('/session', function(req, res){
   // Login
   // Here you would pull down your user credentials and match them up
   // to the request
@@ -312,23 +308,22 @@ app.post('/session', function(req, res){
   res.send({auth: true, id: req.session.id, username: req.session.username});
 });
 
-app.del('/session/:id', function(req, res, next){  
+app.del('/session/:id', function(req, res, next){
   // Logout by clearing the session
   req.session.regenerate(function(err){
     // Generate a new csrf token so the user can login again
     // This is pretty hacky, connect.csrf isn't built for rest
     // I will probably release a restful csrf module
     csrf.generate(req, res, function () {
-      res.send({auth: false, _csrf: req.session._csrf});    
+      res.send({auth: false, _csrf: req.session._csrf});
     });
-  });  
+  });
 });
 
 app.listen(8000);
 ```
 
 _Note: I wrote a custom csrf module for this which can be found in the example directory. It's based of connects and uses the `crypto` library.   I didn't spend much time on it but other traditional csrf modules won't work because they aren't exactly built for this implementation technique._
-
 
 ## Conclusion
 

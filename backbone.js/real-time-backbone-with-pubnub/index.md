@@ -46,18 +46,18 @@ var _ = require('underscore')._,
       publish_key: 'demo',
       subscribe_key: 'demo'
     });
-    
+
 var MyCollection = Backbone.Collection.extend({
   // Add business logic here
 });
- 
+
 var myCollection = new MyCollection();
- 
+
 pubnub.subscribe({
   channel: 'backbone-collection-MyCollection', // This is what is created internally by the framework
   callback: function (message) {
     var data = JSON.parse(message); // All data is transferred as JSON
-    
+
     if (data.method === 'create') {
       myCollection.add(data.model);
     } else if (data.method === 'update') {
@@ -66,21 +66,21 @@ pubnub.subscribe({
       var record = _.find(myCollection.models, function (record) {
         return record.id === data.model.id;
       });
-      
+
       if (record == null) {
         console.log("Could not record: " + model.id);
       }
-      
+
       var diff = _.difference(_.keys(record.attributes), _.keys(data.model));
       _.each(diff, function(key) {
         return record.unset(key);
       });
-      
+
       return record.set(data.model, data.options);
     }
   }
 });
- 
+
 // Now myCollection will always be up to date.
 // Here you can provide some way (i.e. http.createServer) to get the data from the server.
 ```

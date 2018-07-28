@@ -18,7 +18,7 @@ Twitter offers a jsonp API for browsing tweets.  The first thing to note is that
 
 Using the 'q' and 'page' query parameters we can find the results we are after.  In the collection definition below we have set some defaults which can be overridden at any point.
 
-Twitter's search API actually returns a whole bunch of meta information alongside the results.  Though this is a problem for Backbone.js because a Collection expects to be populated with an array of objects. So in our collection definition we can override the Backbone.js default parse function to instead choose the correct property to populate the collection.  
+Twitter's search API actually returns a whole bunch of meta information alongside the results.  Though this is a problem for Backbone.js because a Collection expects to be populated with an array of objects. So in our collection definition we can override the Backbone.js default parse function to instead choose the correct property to populate the collection.
 
 ```js
 // collections/twitter.js
@@ -43,7 +43,7 @@ define([
   return Tweets;
 });
 ```
-    
+
 _Note: Feel free to attach the meta information returned by Twitter to the collection itself e.g._
 
 ```js
@@ -56,7 +56,7 @@ parse: function(resp, xhr) {
 ## Setting up the View
 
 The first thing to do is to load our Twitter collection and template into the widget module. We should attach our collection to our view in our `initialize` function. `loadResults` will be responsible for calling fetch on our Twitter collection. On success we will append the latest results to our widget using our template. Our Backbone.js `events` will listen for `scroll` on the current `el` of the view which is '.twitter-widget'. If the current `scrollTop` is at the bottom then we simply increment the Twitter collections current page property and call `loadResults` again.
-  
+
 ```js
 // views/twitter/widget.js
 define([
@@ -83,14 +83,14 @@ define([
       // we are starting a new load of results so set isLoading to true
       this.isLoading = true;
       // fetch is Backbone.js native function for calling and parsing the collection url
-      this.twitterCollection.fetch({ 
+      this.twitterCollection.fetch({
         success: function (tweets) {
           // Once the results are returned lets populate our template
           $(that.el).append(_.template(TwitterListTemplate, {tweets: tweets.models, _:_}));
           // Now we have finished loading set isLoading back to false
           that.isLoading = false;
         }
-      });      
+      });
     },
     // This will simply listen for scroll events on the current el
     events: {
@@ -119,7 +119,7 @@ Our view above passes into our underscore template the variable tweets which we 
 <ul class="tweets">
 <% _.each(tweets, function (tweet) { %>
 
-  <li><%= tweet.get('text') %></li> 
+  <li><%= tweet.get('text') %></li>
 
 <% }); %>
 </ul>
