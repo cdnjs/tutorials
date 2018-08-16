@@ -7,7 +7,7 @@ Say you want to start a video when it is fully visible and stop it as soon as it
 
 You can do this my using a VisSense `monitor`.
 A monitor is an object observing the visibility of your element providing
- the opportunity to react on certain events e.g.
+the opportunity to react on certain events e.g.
 visibility state changes (element becomes `hidden`, `visible` or `fullyvisible`),
 percentage changes (visible area increases/decreases, etc.).
 But you can even extend monitors with custom functionality and send your own events!
@@ -100,7 +100,7 @@ VisSense.VisMon.Builder(VisSense(myVideo))
   }, 60 * 1000);
 })
 .on('...', function() {
-   // ...
+  // ...
 })
 .build()
 .start();

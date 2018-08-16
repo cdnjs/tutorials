@@ -5,7 +5,7 @@ Next.js is a framework for quickly building universal (also called Isomorphic) s
 React. In this tutorial you will learn essential concepts of server-rendered React apps by creating a demo app with Next.js.
 
 Building apps with Next.js is simple. You just create a <em>pages</em> directory and place React components in it.
- Next.js will take care of everything else.
+Next.js will take care of everything else.
 
 This tutorial was originally published in [techiediaries](https://www.techiediaries.com/universal-react-apps-nextjs/)
 
@@ -21,7 +21,7 @@ You can install Next.js 2.0 via npm with:
 
 ## Installing Next.js 3.0
 
- Next.js 3.0 is still in beta, you can also install it via npm with:
+Next.js 3.0 is still in beta, you can also install it via npm with:
 
     npm install next@beta react react-dom --save
 
