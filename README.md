@@ -2,7 +2,7 @@
 
 ## Overview
 
-We want you to help us write awesome web development tutorials! Community driven open source tutorials. By developers, for developers.
+We want you to help us write awesome Community driven open source web development tutorials!. By developers, for developers.
 
 Here's a simple list of questions to help you figure out if you should publish a web development tutorial on cdnjs:
 
@@ -31,5 +31,5 @@ Tutorials show under each associated library. At the moment we don't have suppor
 * [cdnjs.com](https://cdnjs.com) is visited by hundreds of thousands of web developers every month.
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at any time.
-* Everything is hosted on GitHub so the community can easily help fix bugs and grammatic mistakes in your tutorials.
+* Everything is hosted on GitHub so the community can easily help fix bugs and grammatical mistakes in your tutorials.
 * Cdnjs is a completely volunteer driven effort where we pay for bills out of our own pockets. Writing tutorials increases our advertising revenue which means we can better improve the project.
