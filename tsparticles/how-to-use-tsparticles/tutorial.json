@@ -1,0 +1,19 @@
+{
+  "author": {
+    "name": "Matteo Bruni",
+    "email": "matteo.bruni@me.com",
+    "description": "I'm the author of tsParticles and I work as a full stack developer",
+    "homepage": "https://www.matteobruni.it/",
+    "github": "matteobruni",
+    "twitter": "HollowMatt_ITA"
+  },
+  "description": "Tutorial on configuring tsParticles",
+  "homepage": "https://github.com/matteobruni/tsparticles",
+  "keywords": [
+      "tsparticles",
+      "tutorial"
+  ],
+  "library-tags": ["tsparticles"],
+  "name": "How to configure tsParticles?",
+  "repository": "https://github.com/matteobruni/tsparticles"
+}
