@@ -48,7 +48,7 @@ class SpiralDrawer {
 
 // call this method before initializing tsParticles, this shape will be available in all of your tsParticles instances
 // parameters: shape name, drawer class
-tsParticles.addCustomShape("spiral", new SpiralDrawer());
+tsParticles.addShape("spiral", new SpiralDrawer());
 ```
 
 _config.json_ - The config section to add to your config or in your plugin readme to teach others on how to use it.
