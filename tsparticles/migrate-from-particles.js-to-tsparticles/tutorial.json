@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "Matteo Bruni",
+    "email": "matteo.bruni@me.com",
+    "description": "I'm the author of tsParticles and I work as a full stack developer",
+    "homepage": "https://www.matteobruni.it/",
+    "github": "matteobruni",
+    "twitter": "HollowMatt_ITA"
+  },
+  "description": "How to migrate from Particles.js to tsParticles?",
+  "homepage": "https://github.com/matteobruni/tsparticles",
+  "keywords": [
+      "tsparticles",
+      "tutorial",
+      "migration",
+      "particles.js"
+  ],
+  "library-tags": ["tsparticles", "particles.js"],
+  "name": "How to migrate from Particles.js to tsParticles?",
+  "repository": "https://github.com/matteobruni/tsparticles"
+}

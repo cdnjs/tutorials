@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Matteo Bruni",
+    "email": "matteo.bruni@me.com",
+    "description": "I'm the author of tsParticles and I work as a full stack developer",
+    "homepage": "https://www.matteobruni.it/",
+    "github": "matteobruni",
+    "twitter": "HollowMatt_ITA"
+  },
+  "description": "Creating a custom tsParticles preset",
+  "homepage": "https://github.com/matteobruni/tsparticles",
+  "keywords": [
+      "tsparticles",
+      "modules",
+      "tutorial",
+      "customization",
+      "preset"
+  ],
+  "library-tags": ["tsparticles"],
+  "name": "How to create a custom preset?",
+  "repository": "https://github.com/matteobruni/tsparticles"
+}
