@@ -13,7 +13,7 @@ _fire.preset.js_ - The custom preset script, you can distribute it or reuse in a
 ```javascript
 // call this method before initializing tsParticles, this preset will be available in all of your tsParticles instances
 // parameters: preset name, preset partial options
-tsParticles.addCustomPreset("fire", {
+tsParticles.addPreset("fire", {
   fpsLimit: 40,
   particles: {
     number: {

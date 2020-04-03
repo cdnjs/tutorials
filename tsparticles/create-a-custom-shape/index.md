@@ -13,7 +13,8 @@ _spiral.js_ - The custom shape script, you can distribute it or reuse in all you
 ```javascript
 // call this method before initializing tsParticles, this shape will be available in all of your tsParticles instances
 // parameters: shape name, drawing method
-tsParticles.addCustomShape("spiral", function(context, particle, radius) {
+// opacity parameter is for shapes that needs more opacity handling more than color, like images
+tsParticles.addShape("spiral", function(context, particle, radius, opacity) {
   const shapeData = particle.shapeData;
   const realWidth = (radius - shapeData.innerRadius) / shapeData.lineSpacing;
 
@@ -31,7 +32,7 @@ If you prefere using classes you can, `IShapeDrawer` interface can be implemente
 
 ```javascript
 class SpiralDrawer {
-  draw(context, particle, radius) {
+  draw(context, particle, radius, opacity) {
     const shapeData = particle.shapeData;
     const realWidth = (radius - shapeData.innerRadius) / shapeData.lineSpacing;
 
@@ -47,7 +48,7 @@ class SpiralDrawer {
 
 // call this method before initializing tsParticles, this shape will be available in all of your tsParticles instances
 // parameters: shape name, drawer class
-tsParticles.addCustomShape("spiral", new SpiralDrawer());
+tsParticles.addShape("spiral", new SpiralDrawer());
 ```
 
 _config.json_ - The config section to add to your config or in your plugin readme to teach others on how to use it.
