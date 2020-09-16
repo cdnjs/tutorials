@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "DITDOT",
+        "email": "info@ditdot.hr",
+        "description": "DITDOT offers complete services for tailor-made software development, corporate identity, and consulting - delivering high-quality web applications, mobile apps, and websites.",
+        "homepage": "https://www.ditdot.hr/en",
+        "github": "ditdot-dev",
+        "twitter": "ditdot_info"
+    },
+    "description": "Usage with plain Javascript using CDN",
+    "homepage": "https://www.ditdot.hr/en/vue-flow-form",
+    "keywords": [
+        "vue-flow-form",
+        "form-generator",
+        "tutorial"
+    ],
+    "library-tags": [
+        "vue-flow-form"
+    ],
+    "name": "Usage with plain Javascript using CDN",
+    "repository": "https://github.com/ditdot-dev/vue-flow-form"
+}
