@@ -1,5 +1,8 @@
 ## Usage with plain JavaScript via CDN
 
+<p>cdnjs does not provide the latest version URL, so check <a href="https://www.npmjs.com/package/@ditdot-dev/vue-flow-form">npm</a> or <a href="https://github.com/ditdot-dev/vue-flow-form">GitHub</a> for the latest version of the library.
+</p>
+
 HTML:
 
 ```html
