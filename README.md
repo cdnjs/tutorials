@@ -10,7 +10,7 @@
  <a href="#contributing">
    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
  </a>
- <a href="https://github.com/cdnjs/packages/blob/master/LICENSE">
+ <a href="https://github.com/cdnjs/tutorials/blob/master/LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License">
  </a>
  <a href="https://cdnjs.discourse.group/">
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
- <a href="#donate-and-support-us">
+ <a href="https://github.com/cdnjs/packages/blob/master/README.md#donate-and-support-us">
   <img src="https://img.shields.io/badge/GitHub-Sponsors-EA4AAA.svg?style=flat-square" alt="GitHub Sponsors">
  </a>
  <a href="https://opencollective.com/cdnjs">
@@ -35,7 +35,7 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Instructions](#instructions)
+* [Contributing](#contributing)
 * [Tutorial Listings](#tutorial-listings)
 * [Why host your tutorial on cdnjs?](#why-host-your-tutorial-on-cdnjs)
 
@@ -51,7 +51,7 @@ Here's a simple list of questions to help you figure out if you should publish a
 
 If you answered yes to any of the above, we want you to write a web development tutorial and publish it on cdnjs! It's super easy!
 
-## Instructions
+## Contributing
 
 Simply fork the repository and copy the [example tutorial](https://github.com/cdnjs/tutorials/tree/master/backbone.js/organizing-backbone-using-modules)
 
