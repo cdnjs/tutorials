@@ -71,3 +71,7 @@ Tutorials show under each associated library on the [cdnjs.com](https://cdnjs.co
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at any time.
 * Everything is hosted on GitHub so the community can easily help fix bugs and grammatical mistakes in your tutorials.
+
+## License
+
+Each library is released under its own license. This cdnjs repository and the tutorials within are published under [MIT license](LICENSE).
