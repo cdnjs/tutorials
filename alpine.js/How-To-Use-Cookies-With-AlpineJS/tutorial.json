@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "Peter Thaleikis",
+    "description": "Peter is a developer and startup founder with an eye for opportunities.",
+    "homepage": "https://releasecandidate.dev",
+    "github": "spekulatius",
+    "twitter": "spekulatius1984"
+  },
+  "description": "Alpine is like Vue, but simpler. It lives directly in your browser. Here you learn how to use cookies in AlpineJS!",
+  "homepage": "https://github.com/spekulatius",
+  "keywords": [
+    "alpine.js",
+    "cookies.js",
+    "cookies with alpine",
+    "tutorial"
+  ],
+  "library-tags": ["alpine.js", "cookies.js"],
+  "name": "How to use cookies in Alpine.JS",
+  "repository": "https://github.com/bringyourownideas"
+}
