@@ -1,6 +1,45 @@
-# Cdnjs Tutorials
+<h1 align="center">
+    <a href="https://cdnjs.com"><img src="https://raw.githubusercontent.com/cdnjs/brand/master/logo/standard/dark-512.png" width="175px" alt="< cdnjs >"></a>
+</h1>
 
-## Overview
+<h3 align="center">The #1 free and open source CDN built to make life easier for developers.</h3>
+
+---
+
+<p align="center">
+ <a href="#contributing">
+   <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+ </a>
+ <a href="https://github.com/cdnjs/tutorials/blob/master/LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License">
+ </a>
+ <a href="https://cdnjs.discourse.group/">
+  <img src="https://img.shields.io/discourse/https/cdnjs.discourse.group/status.svg?label=Community%20Discourse&style=flat-square" alt="Community">
+ </a>
+</p>
+
+<p align="center">
+ <a href="https://github.com/cdnjs/packages/blob/master/README.md#donate-and-support-us">
+  <img src="https://img.shields.io/badge/GitHub-Sponsors-EA4AAA.svg?style=flat-square" alt="GitHub Sponsors">
+ </a>
+ <a href="https://opencollective.com/cdnjs">
+  <img src="https://img.shields.io/badge/Open%20Collective-Support%20Us-3385FF.svg?style=flat-square" alt="Open Collective">
+ </a>
+ <a href="https://www.patreon.com/cdnjs">
+  <img src="https://img.shields.io/badge/Patreon-Become%20a%20Patron-E95420.svg?style=flat-square" alt="Patreon">
+ </a>
+</p>
+
+---
+
+## Table of Contents
+
+* [Introduction](#introduction)
+* [Contributing](#contributing)
+* [Tutorial Listings](#tutorial-listings)
+* [Why host your tutorial on cdnjs?](#why-host-your-tutorial-on-cdnjs)
+
+## Introduction
 
 We want you to help us write awesome Community driven open source web development tutorials!. By developers, for developers.
 
@@ -12,7 +51,7 @@ Here's a simple list of questions to help you figure out if you should publish a
 
 If you answered yes to any of the above, we want you to write a web development tutorial and publish it on cdnjs! It's super easy!
 
-## Instructions
+## Contributing
 
 Simply fork the repository and copy the [example tutorial](https://github.com/cdnjs/tutorials/tree/master/backbone.js/organizing-backbone-using-modules)
 
@@ -22,7 +61,7 @@ We want to make a super beautiful and useful tutorial system where anyone can ge
 
 ## Tutorial Listings
 
-Tutorials show under each associated library. At the moment we don't have support for generic JavaScript tutorials but please leave an issue if you want to write one.
+Tutorials show under each associated library on the [cdnjs.com](https://cdnjs.com) website, and are also all available via the [API](https://cdnjs.com/api). At the moment we don't have support for generic JavaScript tutorials but please leave an issue if you want to write one.
 
 ![related tutorials](http://i.imgur.com/mDOePCw.png)
 
@@ -32,4 +71,7 @@ Tutorials show under each associated library. At the moment we don't have suppor
 * You don't have to worry about setting up an elegant website to display your tutorials.
 * Authors get full credit and can remove their work at any time.
 * Everything is hosted on GitHub so the community can easily help fix bugs and grammatical mistakes in your tutorials.
-* Cdnjs is a completely volunteer driven effort where we pay for bills out of our own pockets. Writing tutorials increases our advertising revenue which means we can better improve the project.
+
+## License
+
+Each library is released under its own license. This cdnjs repository and the tutorials within are published under [MIT license](LICENSE).
