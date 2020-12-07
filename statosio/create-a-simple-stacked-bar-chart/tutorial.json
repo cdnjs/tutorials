@@ -1,0 +1,24 @@
+{
+    "author": {
+      "name": "Andreas Banholzer",
+      "email": "hello@13plus4.com",
+      "description": "I'm the author of statosio and I work as a full stack developer",
+      "homepage": "https://www.13plus4.com",
+      "github": "a6b8",
+      "twitter": "_a6b8"
+    },
+    "description": "Create a simple stacked bar chart",
+    "homepage": "https://d3.statosio.com/tutorials/simple-stacked-bar-chart.html",
+    "keywords": [
+        "d3", 
+        "d3js", 
+        "statosio", 
+        "statosiojs", 
+        "javascript", 
+        "svg", 
+        "bar-stacked-chart"
+    ],
+    "library-tags": ["statosio"],
+    "name": "How to create a simple stacked bar chart?",
+    "repository": "https://github.com/a6b8/statosio.js"
+  }
