@@ -38,6 +38,7 @@
 We need following files.
 
 | **Name** | **Source** | **Description** |
+|:------|:------|:------|
 | d3.js | [https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js](https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js) | d3.js Library | 
 | statosio.js | [https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js](https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js) | statosio.js Library | 
 | performance.json | [https://d3.statosio.com/data/performance.json](https://d3.statosio.com/data/performance.json) | Dataset |
@@ -179,6 +180,7 @@ Load diagram
 - Option explained
 
 | **Name** | **Description** | **Details** | 
+|:------|:------|:------|
 | [dataSortCurrent](https://d3.statosio.com/options/data__sort__current.html) | Set the general route for sorting. You can choose between "none", "values", "names". | "values" |
 | [dataSortByValues](https://d3.statosio.com/options/data__sort__by__values.html) | Here you can set type of sorting. You can choose between "ascending" and "decending" | "ascending" |
 
@@ -217,6 +219,7 @@ List of all "data" Options: [here](https://d3.statosio.com/options/index.html#da
 - Option explained
 
 | **Name** | **Description** | **Details** | 
+|:------|:------|:------|
 | [showAverage](https://d3.statosio.com/options/show__average.html) | Calculate and show average line | false |
 
 List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)
