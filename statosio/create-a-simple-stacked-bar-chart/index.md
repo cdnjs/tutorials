@@ -36,6 +36,7 @@
 - We need following files.
 
 | **Name** | **Source** | **Description** |
+|:------|:------|:------|
 | d3.js | [https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js](https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js) | d3.js Library | 
 | statosio.js | [https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js](https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js) | statosio.js Library | 
 | performance.json | [https://d3.statosio.com/data/performance.json](https://d3.statosio.com/data/performance.json) | Dataset |
@@ -176,6 +177,7 @@ Load diagram
 - Option explained
 
 | **Name** | **Description** | **Details** | 
+|:------|:------|:------|
 | [showAverage](https://d3.statosio.com/options/show__average.html) | Calculate and show average line | false |
 
 List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)s
