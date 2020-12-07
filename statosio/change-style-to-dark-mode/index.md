@@ -42,7 +42,10 @@
 We need following files.
 
 | **Name** | **Source** | **Description** |
+|:------|:------|:------|
 | d3.js | [https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js](https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js) | d3.js Library |
+| statosio.js | [https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js](https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js) | statosio.js Library |
+| performance.json | [https://d3.statosio.com/data/performance.json](https://d3.statosio.com/data/performance.json) | Dataset |
 
 
 - statosio.js Structure
@@ -187,6 +190,7 @@ Load diagram
 - Colors in use.
 
 | **Color** | **Hex** | **Used for** | 
+|------:|:------|:------|
 | <svg width="20" height="20"><rect width="20" height="20" style="fill:#E2B08E;stroke-width:3;stroke:rgb(0,0,0)" /></svg> | #E2B08E | Highlight bar chart color |
 | <svg width="20" height="20"><rect width="20" height="20" style="fill:#CC8074;stroke-width:3;stroke:rgb(0,0,0)" /></svg> | #CC8074 | Default bar chart color |
 | <svg width="20" height="20"><rect width="20" height="20" style="fill:#2F3138;stroke-width:3;stroke:none" /></svg> | #2F3138 | Gridline Color |
@@ -194,7 +198,8 @@ Load diagram
 
 - Options explained
 
-| **Name** | **Description** | **Details** | 
+| **Name** | **Description** | **Details** |
+|:------|:------|:------|
 | [styleColorSelectorsChart](https://d3.statosio.com/options/style__color__selectors__chart.html) | Colorize the chart of the selection. Use "hex" values or "html" color-names. | ["#E2B08E", "#CC8074"] |
 | [styleColorCanvasBackground](https://d3.statosio.com/options/style__color__canvas_background.html) | Set background color. | "none" |
 | [styleColorGridline](https://d3.statosio.com/options/style__color__gridline.html) | Set the gridline color. Use "hex" value or "html" color-names. | "#2F3138" |
@@ -241,6 +246,7 @@ List of all "style" Options: [here](https://d3.statosio.com/options/index.html#s
 - Option explained
 
 | **Name** | **Description** | **Details** | 
+|:------|:------|:------|
 | [showAverage](https://d3.statosio.com/options/show__average.html) | Calculate and show average line | false |
 
 List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)
