@@ -1,26 +1,26 @@
 {
-    "author": {
-      "name": "Andreas Banholzer",
-      "email": "hello@13plus4.com",
-      "description": "I'm the author of statosio and I work as a full stack developer",
-      "homepage": "https://www.13plus4.com",
-      "github": "a6b8",
-      "twitter": "_a6b8"
-    },
-    "description": "Select and change position of columns",
-    "homepage": "https://d3.statosio.com/tutorials/select-data.html",
-    "keywords": [
-        "d3", 
-        "d3js", 
-        "statosio", 
-        "statosiojs", 
-        "javascript", 
-        "svg", 
-        "bar-chart", 
-        "point-chart", 
-        "bar-stacked-chart"
-    ],
-    "library-tags": ["statosio"],
-    "name": "How to select and change position of columns?",
-    "repository": "https://github.com/a6b8/statosio.js"
-  }
+  "author": {
+    "name": "Andreas Banholzer",
+    "email": "hello@13plus4.com",
+    "description": "I'm the author of statosio and I work as a full stack developer",
+    "homepage": "https://www.13plus4.com",
+    "github": "a6b8",
+    "twitter": "_a6b8"
+  },
+  "description": "Select and change position of columns",
+  "homepage": "https://d3.statosio.com/tutorials/select-data.html",
+  "keywords": [
+    "d3", 
+    "d3js", 
+    "statosio", 
+    "statosiojs", 
+    "javascript", 
+    "svg", 
+    "bar-chart", 
+    "point-chart", 
+    "bar-stacked-chart"
+  ],
+  "library-tags": ["statosio"],
+  "name": "How to select and change position of columns?",
+  "repository": "https://github.com/a6b8/statosio.js"
+}

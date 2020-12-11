@@ -7,8 +7,8 @@
     "github": "a6b8",
     "twitter": "_a6b8"
   },
-  "description": "Sort a dataset by values",
-  "homepage": "https://d3.statosio.com/tutorials/sort-data.html",
+  "description": "Create a simple point chart",
+  "homepage": "https://d3.statosio.com/tutorials/simple-point-chart.html",
   "keywords": [
     "d3", 
     "d3js", 
@@ -16,11 +16,9 @@
     "statosiojs", 
     "javascript", 
     "svg", 
-    "bar-chart", 
-    "point-chart", 
-    "bar-stacked-chart"
+    "point-chart"
   ],
   "library-tags": ["statosio"],
-  "name": "How to sort a dataset by values?",
+  "name": "How to create a simple point chart?",
   "repository": "https://github.com/a6b8/statosio.js"
 }
