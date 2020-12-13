@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
     <script>
@@ -80,7 +80,7 @@ Insert ```<script>``` Element to load d3.js library.
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
 </head>
 <body>
 </body>
@@ -93,8 +93,8 @@ Insert ```<script>``` Element to load statosio.js.
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
 </body>
@@ -110,8 +110,8 @@ d3.js expect a json array with object in it: ```[ {},{}...]```
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
     <script>
@@ -132,8 +132,8 @@ Load diagram
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
     <script>
@@ -160,8 +160,8 @@ Load diagram
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
     <script>
@@ -215,8 +215,8 @@ List of all "style" Options: [here](https://d3.statosio.com/options/index.html#s
 <!DOCTYPE html>
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.js" integrity="sha512-I54fxhTJwRigWTc3uNjgDzgii7LW+WJuyyA8kc6WaaZ7RQQNAf8bOEJLRNav7n/ca09MUwl5FptUukvqrOTUvQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js" integrity="sha512-cpZ1Pq+WxFjYMahfsghI7nRqv7FVeZLH5CirYPLX11iF6jWfMgkvYVp3UYQ/W109s/3RWtyFNM0wPUOpGfNLJA==" crossorigin="anonymous"></script>
 </head>
 <body>
     <script>
