@@ -3,7 +3,6 @@
 ## Result
 
 ![# d3.statosio](https://d3.statosio.com/assets/images/example-customize-400.jpg)<br>
-[Change style to dark-mode](https://d3.statosio.com/tutorials/change-style.html)
 
 ```html
 <!DOCTYPE html>

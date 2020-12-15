@@ -3,7 +3,6 @@
 ## Result
 
 ![# d3.statosio](https://d3.statosio.com/assets/images/example-select-400.jpg)<br>
-[Select and change position of columns](https://d3.statosio.com/tutorials/select-data.html)
 
 ```html
 <!DOCTYPE html>
@@ -222,5 +221,3 @@ List of all "data" Options: [here](https://d3.statosio.com/options/index.html#da
 | [showAverage](https://d3.statosio.com/options/show__average.html) | Calculate and show average line | false |
 
 List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)
-
-

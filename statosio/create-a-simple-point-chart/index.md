@@ -3,7 +3,6 @@
 ## Result
 
 ![# d3.statosio](https://d3.statosio.com/assets/images/example-point-400.jpg)<br>
-[Create a simple point chart](https://d3.statosio.com/tutorials/simple-point-chart.html)
 
 ```html
 <!DOCTYPE html>

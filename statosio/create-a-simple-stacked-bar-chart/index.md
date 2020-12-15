@@ -180,4 +180,4 @@ Load diagram
 |:---|:---|:---|
 | [showAverage](https://d3.statosio.com/options/show__average.html) | Calculate and show average line | false |
 
-List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)s
+List of all "show" Options: [here](https://d3.statosio.com/options/index.html#show)

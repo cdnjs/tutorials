@@ -3,7 +3,6 @@
 ## Result
 
 ![# d3.statosio](https://d3.statosio.com/assets/images/example-sort-400.jpg)<br>
-[Sort dataset by values](https://d3.statosio.com/tutorials/sort-data.html)
 
 ```html
 <!DOCTYPE html>
