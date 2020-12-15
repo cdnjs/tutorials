@@ -33,7 +33,7 @@
 
 ## Steps
 
-- We need following files.
+We need following files.
 
 | **Name** | **Source** | **Description** |
 |:---|:---|:---|
@@ -41,7 +41,7 @@
 | statosio.js | [https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js](https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js) | statosio.js Library | 
 | performance.json | [https://d3.statosio.com/data/performance.json](https://d3.statosio.com/data/performance.json) | Dataset |
 
-- statosio.js Structure
+statosio.js Structure
 
 ```javascript
 d3.statosio( source, x, y, options )
@@ -174,7 +174,7 @@ Load diagram
 </body>
 ```
 
-- Option explained
+Option explained
 
 | **Name** | **Description** | **Details** | 
 |:---|:---|:---|

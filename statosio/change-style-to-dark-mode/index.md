@@ -46,7 +46,7 @@ We need following files.
 | statosio.js | [https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js](https://cdnjs.cloudflare.com/ajax/libs/statosio/0.9/statosio.js) | statosio.js Library | 
 | performance.json | [https://d3.statosio.com/data/performance.json](https://d3.statosio.com/data/performance.json) | Dataset |
 
-- statosio.js Structure
+statosio.js Structure
 
 ```javascript
 d3.statosio( source, x, y, options )
@@ -185,7 +185,7 @@ Load diagram
 </body>
 ```
 
-- Colors in use.
+Colors in use.
 
 | **Color** | **Hex** | **Used for** | 
 |:---|:---|:---|
@@ -194,7 +194,7 @@ Load diagram
 | <svg width="20" height="20"><rect width="20" height="20" style="fill:#2F3138;stroke-width:3;stroke:none" /></svg> | #2F3138 | Gridline Color |
 | <svg width="20" height="20"><rect width="20" height="20" style="fill:#BABABA;stroke-width:3;stroke:rgb(0,0,0)" /></svg> | #BABABA | Default text color |
 
-- Options explained
+Options explained
 
 | **Name** | **Description** | **Details** | 
 |:---|:---|:---|
@@ -241,7 +241,7 @@ List of all "style" Options: [here](https://d3.statosio.com/options/index.html#s
 </body>
 ```
 
-- Option explained
+Option explained
 
 | **Name** | **Description** | **Details** | 
 |:---|:---|:---|
