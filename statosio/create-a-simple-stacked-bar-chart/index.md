@@ -2,8 +2,8 @@
 
 ## Result
 
-![# d3.statosio](https://d3.statosio.com/assets/images/example-stacked-bar-400.jpg)<br>
-[Create simple stacked bar chart](https://d3.statosio.com/tutorials/simple-stacked-bar-chart.html)
+![# d3.statosio](https://d3.statosio.com/assets/images/example-stacked-bar-400.jpg)
+
 
 ```html
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ statosio.js Structure
 
 ```javascript
 d3.statosio( source, x, y, options )
-``````
+```
 
 | | **Value** | **Type** |
 |------:|:------|:------|

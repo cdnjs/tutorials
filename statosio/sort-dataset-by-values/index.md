@@ -2,7 +2,7 @@
 
 ## Result
 
-![# d3.statosio](https://d3.statosio.com/assets/images/example-sort-400.jpg)<br>
+![# d3.statosio](https://d3.statosio.com/assets/images/example-sort-400.jpg)
 
 ```html
 <!DOCTYPE html>
@@ -46,7 +46,7 @@ statosio.js Structure
 
 ```javascript
 d3.statosio( source, x, y, options )
-``````
+```
 
 | | **Value** | **Type** |
 |------:|:------|:------|
