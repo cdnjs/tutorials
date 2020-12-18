@@ -4,7 +4,6 @@
 
 ![# d3.statosio](https://d3.statosio.com/assets/images/example-stacked-bar-400.jpg)
 
-
 ```html
 <!DOCTYPE html>
 <head>
