@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Andreas Banholzer",
+    "email": "hello@13plus4.com",
+    "description": "I'm the author of statosio and I work as a full stack developer",
+    "homepage": "https://www.13plus4.com",
+    "github": "a6b8",
+    "twitter": "_a6b8"
+  },
+  "description": "Sort a dataset by values",
+  "homepage": "https://d3.statosio.com/tutorials/sort-data.html",
+  "keywords": [
+    "d3", 
+    "d3js", 
+    "statosio", 
+    "statosiojs", 
+    "javascript", 
+    "svg", 
+    "bar-chart", 
+    "point-chart", 
+    "bar-stacked-chart"
+  ],
+  "library-tags": ["statosio"],
+  "name": "How to sort a dataset by values?",
+  "repository": "https://github.com/a6b8/statosio.js"
+}
