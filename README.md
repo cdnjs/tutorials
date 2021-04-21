@@ -6,32 +6,6 @@
 
 ---
 
-<p align="center">
- <a href="#contributing">
-   <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
- </a>
- <a href="https://github.com/cdnjs/tutorials/blob/master/LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License">
- </a>
- <a href="https://cdnjs.discourse.group/">
-  <img src="https://img.shields.io/discourse/https/cdnjs.discourse.group/status.svg?label=Community%20Discourse&style=flat-square" alt="Community">
- </a>
-</p>
-
-<p align="center">
- <a href="https://github.com/cdnjs/packages/blob/master/README.md#donate-and-support-us">
-  <img src="https://img.shields.io/badge/GitHub-Sponsors-EA4AAA.svg?style=flat-square" alt="GitHub Sponsors">
- </a>
- <a href="https://opencollective.com/cdnjs">
-  <img src="https://img.shields.io/badge/Open%20Collective-Support%20Us-3385FF.svg?style=flat-square" alt="Open Collective">
- </a>
- <a href="https://www.patreon.com/cdnjs">
-  <img src="https://img.shields.io/badge/Patreon-Become%20a%20Patron-E95420.svg?style=flat-square" alt="Patreon">
- </a>
-</p>
-
----
-
 ## Table of Contents
 
 * [Introduction](#introduction)
