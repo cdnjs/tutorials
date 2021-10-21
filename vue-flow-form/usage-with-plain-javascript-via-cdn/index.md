@@ -8,13 +8,13 @@ HTML:
 ```html
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.20/vue.global.prod.min.js"></script>
     <!-- Flow Form -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.umd.min.js"></script>
     <!-- Flow Form base CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.min.css">
     <!-- Optional theme.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.theme-minimal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.theme-minimal.min.css">
   </head>
   <body>
     <div id="app">
