@@ -8,13 +8,13 @@ HTML:
 ```html
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.20/vue.global.prod.min.js"></script>
     <!-- Flow Form -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.umd.min.js"></script>
     <!-- Flow Form base CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.min.css">
     <!-- Optional theme.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/1.1.0/vue-flow-form.theme-minimal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-flow-form/2.1.0/vue-flow-form.theme-minimal.min.css">
   </head>
   <body>
     <div id="app">
@@ -28,20 +28,21 @@ HTML:
 JavaScript (content of app.js):
 
 ```js
-var app = new Vue({
+var app = Vue.createApp({
   el: '#app',
+  template: '<flow-form v-bind:questions="questions" v-bind:language="language" />',
   data: function() {
     return {
-      language: new FlowForm.LanguageModel({
+      language: new VueFlowForm.LanguageModel({
         // Your language definitions here (optional).
         // You can leave out this prop if you want to use the default definitions.
       }),
       questions: [
-        new FlowForm.QuestionModel({
+        new VueFlowForm.QuestionModel({
           title: 'Question',
-          type: FlowForm.QuestionType.MultipleChoice,
+          type: VueFlowForm.QuestionType.MultipleChoice,
           options: [
-            new FlowForm.ChoiceOption({
+            new VueFlowForm.ChoiceOption({
               label: 'Answer'
             })
           ]
@@ -49,7 +50,9 @@ var app = new Vue({
       ]
     }
   }
-});
+}).component('FlowForm', VueFlowForm.FlowForm);
+
+const vm = app.mount('#app');
 ```
 
 ## Project Documentation
