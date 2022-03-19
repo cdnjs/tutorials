@@ -1,0 +1,11 @@
+{
+  "author": {
+    "name": "Aman Ahmed",
+    "description": "Entusiast , This is all about me "
+  },
+  "description": "This Tutorial is the Part 1 of A Blog with Next.js series",
+  "keywords": ["react", "nextjs", "universal"],
+  "library-tags": ["react", "nextjs"],
+  "name": "Building A Blog With Next.js"
+  
+}
